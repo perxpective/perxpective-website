@@ -40,8 +40,15 @@ const config = {
     useSystemColorMode: true
 }
 
+const fonts = {
+    fonts: {
+        heading: `'Poppins', sans-serif`,
+        body: `'Open Sans', sans-serif`
+    }
+}
+
 const theme = extendTheme({
-    config, styles, components, colors
+    config, styles, components, colors, fonts
 })
 
 export default theme
