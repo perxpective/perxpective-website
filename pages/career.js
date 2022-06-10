@@ -14,9 +14,9 @@ export default function Career() {
                     </Box>
                     <Transitions>
                         <Heading as="h1" variant="Page-Title">
-                            Biography
+                            Career
                         </Heading>
-                        <p>My story, passions, and future!</p>
+                        <p>View my career pathways; past, present and future</p>
                     </Transitions>
                 </Box>
             </Box>

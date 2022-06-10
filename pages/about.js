@@ -89,7 +89,7 @@ export default function About() {
                                 <Icon as={SiReact} boxSize={10} />
                                 <p>React</p>
                             </Box>
-                            <Box bg="gray.300" p={3} borderRadius="lg" boxShadow={"2xl"}>
+                            <Box bg="gray.400" p={3} borderRadius="lg" boxShadow={"2xl"}>
                                 <Icon as={SiNextdotjs} boxSize={10} />
                                 <p>Next.js</p>
                             </Box>
