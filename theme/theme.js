@@ -18,7 +18,12 @@ const components = {
                 textDecorationColor: '#72c275',
                 textDecorationThickness: 1,
                 marginTop: 3,
-                marginBottom: 4
+                marginBottom: 4,
+                fontFamily: 'poppins'
+            },
+            
+            'Page-Title': {
+                fontFamily: 'poppins'
             }
         }
     },
