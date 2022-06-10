@@ -12,11 +12,15 @@ import {
     MenuButton,
     useColorModeValue,
     IconButton,
-    Icon
+    Icon,
+    Img
 } from '@chakra-ui/react'
 
+// Import Icons
 import { HamburgerIcon } from '@chakra-ui/icons'
-import { FcHome } from 'react-icons/Fc'
+import { VscGithub } from 'react-icons/Vsc'
+
+// Import Toggle Button
 import ToggleButton from '../components/toggleButton'
 const LinkItem = ({ href, path, children }) => {
     const active = path === href
@@ -34,17 +38,15 @@ const Navbar = props => {
     const { path } = props
     return (
         <Box align="center" position="fixed" as="nav" w="100%" bg={useColorModeValue('#ffffff40', '#20202380')} style={{backdropFilter:'blur(10px)'}} zIndex={1} {...props}>
-            <Container display="flex" p={2} maxW="container.md" wrap="wrap" align="center" justify="space-between">
+            <Container display="flex" p={2} maxW="100%" wrap="wrap" align="center" justify="space-between">
                 <Flex align="center" mr={5}>
-                    <Heading as="h1" size="lg">
-                        <LinkItem href="/" path={path}>
-                            <Icon as={FcHome}/>
-                        </LinkItem>
-                    </Heading>
+                    <LinkItem href="/" path={path}>
+                        <Img borderRadius="full" borderColor="#72c275" borderWidth={2} objectFit="cover" borderStyle="Solid" h={12} w={59} src="/images/profilepic.png" alt="profile-pic-of-robot" />
+                    </LinkItem>
                 </Flex>
                 <Stack direction={{base: 'column', md: 'row'}} display={{base: 'none', md: 'flex'}} width={{base: 'full', md: 'flex'}} alignItems="center" flexGrow={1} mt={{base: 4, nmd: 0}}>
                     <LinkItem href="/about" path={path}>
-                        About
+                        Bio
                     </LinkItem>
                     <LinkItem href="/projects" path={path}>
                         Projects
@@ -52,9 +54,12 @@ const Navbar = props => {
                     <LinkItem href="/career" path={path}>
                         Career
                     </LinkItem>
-                    <LinkItem href="/career" path={path}>
-                        Github
+                    <LinkItem href="/about-the-page" path={path}>
+                        About
                     </LinkItem>
+                    <Link href="https://github.com/perxpective/perspective" isExternal target={"_blank"}>
+                        <IconButton aria-label='View Source Code' icon={<VscGithub />} />
+                    </Link>
                 </Stack>
 
                 <Box flex={1} align="right">

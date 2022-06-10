@@ -6,18 +6,22 @@ import {
   Img, 
   Button, 
   Icon, 
-  Link
+  Link,
+  Divider
 } from '@chakra-ui/react'
 
+// Import from Next.js
+import Image from 'next/image'
 import NextLink from 'next/link'
+
 // Icons
 import { FcInfo, FcIdea, FcShare } from 'react-icons/Fc'
-import { CgHello } from  'react-icons/Cg'
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import { RiCodeBoxFill } from 'react-icons/Ri'
 import { BsDiscord, BsInstagram, BsMailbox2 } from 'react-icons/Bs'
 import { VscGithub } from 'react-icons/Vsc'
 
+import styles from '../styles/Home.module.css'
 
 import Section from '../components/section'
 import Transitions from '../components/transition'
@@ -25,8 +29,8 @@ import Transitions from '../components/transition'
 export default function Home() {
   return (
     <Container align={"center"}>
-      <Box display={{ xl: 'flex' }}>
-        <Box flexGrow={1} >
+      <Box display={{ xl: 'flex' }} align="center">
+        <Box flexGrow={1}>
           <Box flexShrink={0} mt={{base:4, md:0}} ml={{md:6}} align="center">
             <Img borderRadius="full" borderColor="#72c275" borderWidth={2} objectFit="cover" borderStyle="Solid" boxSize={150} src="/images/profilepic.png" alt="profile-pic-of-robot"/>
           </Box>
@@ -38,21 +42,22 @@ export default function Home() {
           </Transitions>
         </Box>
       </Box>
-      <br/>
+
+      <Divider/>
+
       <Box display={{xl:'flex'}}>
         <Section>
           <Heading as="h2" variant="section-title">
             Hello there!
           </Heading>
-          <br/>
-          <Img borderRadius={50} borderColor="#72c275" borderwidth={2} objectFit="cover" borderStyle="Solid" boxSize={300} src="/images/portrait.jpg" alt="siloutte of teenager"/>
-          <br/>
           <p>My name is Ervin and I am an aspiring programmer with a passion for cybersecurity and all things tech!</p>
           <p>I love coding and I am consistently upgrading my skills in programming and happening in my own free time such as making good use of my free time developing this very website you see here!</p>
           <p>My main principle in life is to treat everyone with respect no matter what their backgrounds are and I try my best to lend a helping hand or a listening ear to those who need it.</p>
           <p>I love being a leader who takes responsibility and initiative and guides others to becoming a better person in life &#9829; </p>
         </Section>
       </Box>
+
+      <Divider />
 
       <Box display={{ xl:'flex'}} align="center">
         <Section>
@@ -74,6 +79,8 @@ export default function Home() {
         </Section>
       </Box>
 
+      <Divider />
+
       <Box display={{ xl:'flex' }} align="center">
         <Section>
           <Heading as="h1" size="lg">
@@ -94,6 +101,8 @@ export default function Home() {
         </Section>
       </Box>
 
+      <Divider />
+
       <Box display={{ xl: 'flex' }} align="center">
         <Section>
           <Heading as="h1" size="lg">
@@ -113,6 +122,8 @@ export default function Home() {
           </Box>
         </Section>
       </Box>
+
+      <Divider />
 
       <Box display={{ xxl: 'flex' }} align="center">
         <Section>
@@ -157,6 +168,39 @@ export default function Home() {
           </a>
         </Section>
       </Box>
+
+      <Divider />
+      <br/>
+      <Box display={{ xl: 'flex' }} align="center">
+        <Section>
+          <Heading as="h1" size="lg">
+            <Icon as={VscGithub} boxSize={20} />
+          </Heading>
+          <Heading as="h1" variant="section-title">
+            View the Source Code
+          </Heading>
+          <p>Want to see how I managed to code this amazing website? Find my repository by clicking below!</p>
+          <Box align="center" my={4}>
+            <Link href="https://github.com/perxpective/perspective" target={"_blank"} isExternal>
+              <Button colorScheme="green" rightIcon={<ChevronRightIcon />}>
+                View GitHub Repository
+              </Button>
+            </Link>
+          </Box>
+        </Section>
+      </Box>
+      <footer className={styles.footer}>
+        <a
+          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Powered by{' '}
+          <span className={styles.logo}>
+            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+          </span>
+        </a>
+      </footer>
     </Container>
   )
 }
