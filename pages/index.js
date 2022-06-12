@@ -42,9 +42,9 @@ export default function Home() {
           </Transitions>
         </Box>
       </Box>
-
+      <br/>
       <Divider/>
-
+      <br/>
       <Box display={{xl:'flex'}}>
         <Section>
           <Heading as="h2" variant="section-title">

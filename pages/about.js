@@ -4,6 +4,10 @@ import React from 'react'
 import { SiJavascript, SiPython, SiFlutter, SiReact, SiNextdotjs, SiAdobephotoshop, SiAdobepremierepro, SiAdobelightroom } from 'react-icons/Si'
 import { FcLinux } from 'react-icons/Fc'
 
+import Image from 'next/image'
+
+import styles from '../styles/Home.module.css'
+
 import Section from '../components/section'
 import Transitions from '../components/transition'
 
@@ -129,6 +133,19 @@ export default function About() {
                     </Box>
                 </Section>
             </Box>
+            <br />
+            <footer className={styles.footer}>
+                <a
+                    href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Powered by{' '}
+                    <span className={styles.logo}>
+                        <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+                    </span>
+                </a>
+            </footer>
         </Container>
     )
 }
