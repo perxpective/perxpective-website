@@ -14,7 +14,7 @@ import Transitions from '../components/transition'
 export default function About() {
     return (
         <Container textAlign={"center"}>
-            <Box display={{ md: 'flex' }}>
+            <Box display={{ lg: 'flex' }}>
                 <Box flexGrow={1} >
                     <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} align="center">
                         <Img borderRadius="full" borderColor="#72c275" borderWidth={2} objectFit="cover" borderStyle="Solid" boxSize={150} src="/images/profilepic.png" alt="profile-pic-of-robot" />
@@ -116,22 +116,7 @@ export default function About() {
                         </SimpleGrid>
                     </Box>
                 </Section>
-            </Box>
 
-            <br/> 
-            
-            <Box textAlign={"left"}>
-                <Section>
-                    <Heading as="h2" variant="section-title">Education</Heading>
-                    <Box boxSize={500} align="center">
-                        <Img src="/images/coding.jpg" borderRadius={30} />
-                        <br/>
-                        <Box align="left">
-                            <Text>In the future, I would like to pursue a university degree in Computer Science to broaden my skills in the IT industry and become a software engineer that specializes in cybersecurity</Text>
-                            <Text>I also want devote my service to my home country using my expertise in cybersecurity by enlisting 3 years of service in the Digital Intelligence Service, the fourth branch of the SAF under the Cyber NSF Scheme </Text>
-                        </Box>
-                    </Box>
-                </Section>
             </Box>
             <br />
             <footer className={styles.footer}>

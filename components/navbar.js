@@ -45,7 +45,7 @@ const Navbar = props => {
                     </LinkItem>
                 </Flex>
                 <Stack direction={{base: 'column', md: 'row'}} display={{base: 'none', md: 'flex'}} width={{base: 'full', md: 'flex'}} alignItems="center" flexGrow={1} mt={{base: 4, nmd: 0}}>
-                    <LinkItem href="/about" path={path}>
+                    <LinkItem href="/bio" path={path}>
                         Bio
                     </LinkItem>
                     <LinkItem href="/projects" path={path}>
@@ -72,7 +72,7 @@ const Navbar = props => {
                                     <MenuItem as={Link}>Home</MenuItem>
                                 </NextLink>
 
-                                <NextLink href="/about" passHref>
+                                <NextLink href="/bio" passHref>
                                     <MenuItem as={Link}>About</MenuItem>
                                 </NextLink>
 

@@ -70,7 +70,7 @@ export default function Home() {
           <p>Find out more about my story, my passion and interests and hopes for the future!</p>
           
           <Box align="center" my={4}>
-            <NextLink href="/about">
+            <NextLink href="/bio">
               <Button colorScheme="green" rightIcon={<ChevronRightIcon/>}>
                 Go to About
               </Button>
@@ -92,7 +92,7 @@ export default function Home() {
           <p>Know more about my aspirations for the future and my past experiences of my career!</p>
 
           <Box align="center" my={4}>
-            <NextLink href="/about">
+            <NextLink href="/career">
               <Button colorScheme="green" rightIcon={<ChevronRightIcon/>}>
                 View Career
               </Button>
@@ -114,7 +114,7 @@ export default function Home() {
           <p>Take a look at some of my projects that I have done in school, as well as in my own free time!</p>
 
           <Box align="center" my={4}>
-            <NextLink href="/about">
+            <NextLink href="/projects">
               <Button colorScheme="green" rightIcon={<ChevronRightIcon />}>
                 View my Projects
               </Button>
@@ -181,11 +181,11 @@ export default function Home() {
           </Heading>
           <p>Want to see how I managed to code this amazing website? Find my repository by clicking below!</p>
           <Box align="center" my={4}>
-            <Link href="https://github.com/perxpective/perspective" target={"_blank"} isExternal>
+            <a href="https://github.com/perxpective/perspective" target="_blank">
               <Button colorScheme="green" rightIcon={<ChevronRightIcon />}>
                 View GitHub Repository
               </Button>
-            </Link>
+            </a>
           </Box>
         </Section>
       </Box>

@@ -3,9 +3,6 @@ import {
     Box, 
     Heading, 
     Img, 
-    SimpleGrid, 
-    Icon, 
-    Text,
     Accordion,
     AccordionItem,
     AccordionButton,
@@ -14,12 +11,11 @@ import {
     Table,
     Thead,
     Tbody,
-    Tfoot,
     Tr,
     Th,
     Td,
-    TableCaption,
     TableContainer,
+    Text
 } from '@chakra-ui/react'
 
 import Image from 'next/image'
@@ -34,7 +30,7 @@ import Transitions from '../components/transition'
 export default function Career() {
     return (
         <Container textAlign={"center"}>
-            <Box display={{ md: 'flex' }} textAlign={"center"}>
+            <Box display={{ lg: 'flex' }} textAlign={"center"}>
                 <Box flexGrow={1} >
                     <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} align="center">
                         <Img borderRadius="full" borderColor="#72c275" borderWidth={2} objectFit="cover" borderStyle="Solid" boxSize={150} src="/images/profilepic.png" alt="profile-pic-of-robot" />
@@ -81,7 +77,7 @@ export default function Career() {
                             </Heading>
                             <AccordionPanel pb={4}>
                                 <Box align="center" pb={10}>
-                                    <Img borderRadius="20" objectFit="cover" w={300} src="/images/barker.jfif" alt="profile-pic-of-robot" />
+                                    <Img borderRadius="20" objectFit="cover" w={300} src="/images/barker.jfif" alt="class-photo" />
                                 </Box>
                                 <ul>
                                     <li>I got posted to the Express stream in Anglo-Chinese School (Barker Road) in 2017 where I spent four years forging unforgettable friendships and bortherhoods that last forever</li>
@@ -90,9 +86,18 @@ export default function Career() {
                                     <br />
                                     <li>I took English, Chinese B, Elementary Mathematics, Additional Mathematics, Physics, Chemistry, Computing and Social Studies with Geography Elective for my Upper Secondary subject combination</li>
                                     <br />
-                                    <li>Took the O Levels and obtained the following grades: </li>
                                 </ul>
-                                <br/>
+                                <Text as="u" fontSize={18}>Leadership Positions:</Text>
+                                <ul>
+                                    <br />
+                                    <li>Joined the Digital Media CCA and was appointed the Vice-President of Photography in Sec 3</li>
+                                    <br />
+                                    <li>My leadership responsibilities include planning CCA schedules and duties for the academic year and planning training sessions for juniors</li>
+                                    <br/> 
+                                </ul>
+
+                                <Text>Obtained the following grades for the GCE-O-Levels 2020</Text>
+                                <TableContainer>
                                     <Table>
                                         <Thead>
                                             <Tr>
@@ -135,6 +140,8 @@ export default function Career() {
                                             </Tr>
                                         </Tbody>
                                     </Table>
+                                </TableContainer>
+
                             </AccordionPanel>
                         </AccordionItem>
                         <AccordionItem>
@@ -155,7 +162,23 @@ export default function Career() {
                                     <br />
                                     <li>Polytechnic has allowed me to shine and further develop my skills in cybersecirty through modules like Ethical Hacking, Digital Forensics, Web Development, Cryptography and Secure Coding</li>
                                     <br />
-                                    <li>SP School of Computing also offers a lot of opportunities to obtain scholarships for people with good track records like me</li>
+                                    <li>SP School of Computing also offers a lot of opportunities to obtain scholarships for people with good track records</li>
+                                </ul>
+
+                                <br />
+                                <Text as="u" fontSize={18}>Leadership Positions:</Text>
+                                <ul>
+                                    <br />
+                                    <li>Joined the SOC Ambassadors and DISM Gryphons Special Interest Group (SIG)</li>
+                                    <br />
+                                    <li>Appointed the Head of Research and Development of SOCA in 2022 (Year 2) </li> 
+                                    <br />
+                                    <li>Responsibilities: In charge of all the technical projects done by the club such as the SOCA Website hosted on a custom domain and the LEMonade app, a collaboration with Cyber Youth Singapore</li>
+                                    <br />
+                                    <li>Appointed as an EXCO member of DISM Gryphons in charge of Media and Outreach.</li>
+                                    <br />
+                                    <li>Responsibilities:  Eorking with my EXCO team to run events in the SIG as well as handle the publications of events that happen in Gryphons.</li>
+                                    
                                 </ul>
                             </AccordionPanel>
                         </AccordionItem>
@@ -169,6 +192,9 @@ export default function Career() {
                                 </AccordionButton>
                             </Heading>
                             <AccordionPanel pb={4}>
+                                
+                                <Img src="/images/coding.jpg" borderRadius={30}  />
+                                <br />
                                 <ul>
                                     <li>I intend to serve my national service for three years under the Digital Intelligence Service (DIS), the fourth branch of the Singapore Armed Forces to apply what I have learnt in my Polytechnic course in a military envrionment.</li>
                                     <br />
