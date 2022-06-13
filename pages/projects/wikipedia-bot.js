@@ -6,8 +6,6 @@ import {
     Img,
     Button,
     Link,
-    SimpleGrid,
-    GridItem,
     Text,
     Badge,
     Icon
@@ -29,7 +27,7 @@ export default function WikipediaBot() {
         <Container textAlign={"center"}>
             <Box display={{ lg: 'flex' }} textAlign={"center"}>
                 <Box flexGrow={1} >
-                    <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} align="center">
+                    <Box flexShrink={0} mt={{ base: 4, md: 0 }} align="center">
                         <Img borderRadius="full" borderColor="#72c275" borderWidth={2} objectFit="cover" borderStyle="Solid" boxSize={150} src="/images/profilepic.png" alt="profile-pic-of-robot" />
                     </Box>
                     <Transitions>
