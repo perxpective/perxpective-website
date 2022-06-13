@@ -3,7 +3,7 @@ import { mode } from '@chakra-ui/theme-tools'
 const styles = {
     global: props => ({
         body: {
-            bg: mode('#8cf7ff', '#212121')(props)
+            bg: mode('#e9fcff', '#212121')(props)
         }
     })
 }

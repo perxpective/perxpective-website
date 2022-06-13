@@ -37,7 +37,7 @@ const LinkItem = ({ href, path, children }) => {
 const Navbar = props => {
     const { path } = props
     return (
-        <Box align="center" position="fixed" as="nav" w="100%" bg={useColorModeValue('#ffffff40', '#20202380')} style={{backdropFilter:'blur(10px)'}} zIndex={1} {...props}>
+        <Box align="center" position="fixed" as="nav" w="100%" bg={useColorModeValue('#e9fcff80', '#20202380')} style={{backdropFilter:'blur(10px)'}} zIndex={1} {...props}>
             <Container display="flex" p={2} maxW="100%" wrap="wrap" align="center" justify="space-between">
                 <Flex align="center" mr={5}>
                     <LinkItem href="/" path={path}>

@@ -3,10 +3,14 @@ import {
     Box,
     Heading,
     Img,
-    Link,
     SimpleGrid,
-    Text
+    Text,
+    Button,
+    Icon
 } from '@chakra-ui/react'
+
+import { ChevronRightIcon } from '@chakra-ui/icons'
+import { VscGithub } from 'react-icons/Vsc'
 
 import NextLink from 'next/link'
 import Image from 'next/image'
@@ -32,6 +36,16 @@ export default function Projects() {
                     <br />
                     <Box>
                         <Section>
+                            <Box align={"center"} pt={5} pb={10}>
+                                <Icon as={VscGithub} boxSize={50} />
+                                <Text>For more projects, you can check out all of my repositories on my GitHub profile!</Text>
+                                <br />
+                                <a href={"https://github.com/perxpective"} target={"_blank"}>
+                                    <Button colorScheme="green" rightIcon={<ChevronRightIcon />}>
+                                        View my GitHub Profile!
+                                    </Button>
+                                </a>
+                            </Box>
                             <SimpleGrid columns={{sm: 1, md: 2}} spacing={10}>
                                 <NextLink href="/projects/wikipedia-bot">
                                     <Box>
@@ -49,6 +63,15 @@ export default function Projects() {
                                         </Box>
                                         <Heading as="h2" variant="section-title">Cryptography Project</Heading>
                                         <Text as="sub">Project to secure the transfer of images from cameras to servers</Text>
+                                    </Box>
+                                </NextLink>
+                                <NextLink href="/projects/quiz">
+                                    <Box>
+                                        <Box p={3}>
+                                            <Img borderRadius={20} src="/images/quiz.jpg" objectFit="cover" w="100%" h={145} />
+                                        </Box>
+                                        <Heading as="h2" variant="section-title">Text-Based Quiz Application</Heading>
+                                        <Text as="sub">A quiz application that allows admins to create, add, edit and delete questions, quizzes and modules for users around the world to take and gain new knowledge!</Text>
                                     </Box>
                                 </NextLink>
                             </SimpleGrid>

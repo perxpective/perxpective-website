@@ -5,8 +5,7 @@ import {
   Heading, 
   Img, 
   Button, 
-  Icon, 
-  Link,
+  Icon,
   Divider
 } from '@chakra-ui/react'
 
@@ -176,7 +175,7 @@ export default function Home() {
           <Heading as="h1" size="lg">
             <Icon as={VscGithub} boxSize={20} />
           </Heading>
-          <Heading as="h1" variant="section-title">
+          <Heading as="h2" variant="section-title">
             View the Source Code
           </Heading>
           <p>Want to see how I managed to code this amazing website? Find my repository by clicking below!</p>
