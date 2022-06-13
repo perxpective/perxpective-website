@@ -28,7 +28,7 @@ export default function About() {
                 </Box>
             </Box>
             <br/>
-            <Box display={{ xxl: 'flex' }} textAlign={"left"}>
+            <Box display={{ lg: 'flex' }} textAlign={"left"}>
                 <Section>
                     <Heading as="h2" variant="section-title">
                         My Personal Story
@@ -72,7 +72,7 @@ export default function About() {
             <Box textAlign={"left"}>
                 <Section>
                     <Heading as="h2" variant="section-title">
-                        Skills
+                        I have experience in the following areas:
                     </Heading>
 
                     <Box>

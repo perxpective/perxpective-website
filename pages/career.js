@@ -177,7 +177,7 @@ export default function Career() {
                                     <br />
                                     <li>Appointed as an EXCO member of DISM Gryphons in charge of Media and Outreach.</li>
                                     <br />
-                                    <li>Responsibilities:  Eorking with my EXCO team to run events in the SIG as well as handle the publications of events that happen in Gryphons.</li>
+                                    <li>Responsibilities: Working with my EXCO team to run events in the SIG as well as handle the publications of events that happen in Gryphons.</li>
                                     
                                 </ul>
                             </AccordionPanel>

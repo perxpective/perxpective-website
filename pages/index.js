@@ -50,7 +50,7 @@ export default function Home() {
             Hello there!
           </Heading>
           <p>My name is Ervin and I am an aspiring programmer with a passion for cybersecurity and all things tech!</p>
-          <p>I love coding and I am consistently upgrading my skills in programming and happening in my own free time such as making good use of my free time developing this very website you see here!</p>
+          <p>I love coding and I am constantly upgrading my skills in programming and happening in my own free time such as making good use of my free time developing this very website you see here!</p>
           <p>My main principle in life is to treat everyone with respect no matter what their backgrounds are and I try my best to lend a helping hand or a listening ear to those who need it.</p>
           <p>I love being a leader who takes responsibility and initiative and guides others to becoming a better person in life &#9829; </p>
         </Section>
