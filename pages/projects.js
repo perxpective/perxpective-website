@@ -40,7 +40,7 @@ export default function Projects() {
                                 <Icon as={VscGithub} boxSize={50} />
                                 <Text>For more projects, you can check out all of my repositories on my GitHub profile!</Text>
                                 <br />
-                                <a href={"https://github.com/perxpective"} target={"_blank"}>
+                                <a href={"https://github.com/perxpective"} target={"_blank"} rel="noopener noreferrer">
                                     <Button colorScheme="green" rightIcon={<ChevronRightIcon />}>
                                         View my GitHub Profile!
                                     </Button>

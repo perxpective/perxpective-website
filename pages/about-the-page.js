@@ -37,15 +37,15 @@ export default function AboutPage() {
                         <Section>
                             <Icon as={MdQuestionAnswer} boxSize={100} />
                             <Heading as="h2" variant="section-title">How did I developed my portfolio website?</Heading>
-                            <Text>I developed this website using mainly JavaScript for developing the website with a little bit of HTML syntax required.</Text>
+                            <Text>I developed this website using mainly JavaScript with a little bit of HTML syntax required.</Text>
                             <br />
                             <Text>I am using a React Native framework called Next.js to develop the front-end with JavaScript</Text>
                             <br />
-                            <Text>For the UI, I am using a library called Chakra to build this cool modern and simplistic interface! No CSS even needed!</Text>
+                            <Text>For the UI, I am using a library called Chakra UI to build this cool modern and simplistic interface! No CSS even needed!</Text>
                             <br />
                             <Text>I also used Framer Motion to create these extremely smooth transitions when you navigate the different pages on my website!</Text>
                             <br />
-                            <Text>I hosted this website on Vercel for free and it was very easy to use!</Text>
+                            <Text>I deployed and hosted this website on Vercel.</Text>
                             <br />
                             <Heading as="h2" variant="section-title">Where did I get motivation or inspiration from to create my portfolio website?</Heading>
                             <br />
@@ -53,7 +53,7 @@ export default function AboutPage() {
                             <br />
                             <Text>However, I wanted to properly develop a website that I can plug in my portfolio as a showcase of my web development skills.</Text>
                             <br />
-                            <Text>Personally, I did not find coding everything in basic HTML and CSS from scatch useful for creating my official portfolio website, so I looked into other methods like React!</Text>
+                            <Text>Personally, I did not find coding everything in basic HTML and CSS from scratch useful for creating my official portfolio website, so I looked into other methods like React!</Text>
                             <br />
                             <Text>I feel that it is a very versatile library that can also be used to develop apps, so I felt that practising coding with React will also allow me to understand better how to develop apps, which will be a skill I will have to eventually learn when I enter the IT industry!</Text>
                             <br />
@@ -61,7 +61,7 @@ export default function AboutPage() {
                             <br />
                             <Text>I would definitely encourage you to check out his YouTube channel! He makes amazing quality and chill programming videos on his channel!!!</Text>
                             <br />
-                            <a href="https://www.youtube.com/c/devaslife">
+                            <a href="https://www.youtube.com/c/devaslife" rel="noopener noreferrer">
                                 <Button rightIcon={<ChevronRightIcon />} leftIcon={<SiYoutube />} colorScheme={"red"}>
                                     devaslife
                                 </Button>

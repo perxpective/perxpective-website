@@ -17,7 +17,7 @@ import NextLink from 'next/link'
 import { FcInfo, FcIdea, FcShare } from 'react-icons/Fc'
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import { RiCodeBoxFill } from 'react-icons/Ri'
-import { BsDiscord, BsInstagram, BsMailbox2 } from 'react-icons/Bs'
+import { BsDiscord, BsInstagram, BsLinkedin } from 'react-icons/Bs'
 import { VscGithub } from 'react-icons/Vsc'
 
 import styles from '../styles/Home.module.css'
@@ -134,7 +134,7 @@ export default function Home() {
           </Heading>
           <p>Keep in touch with me across other social media platforms!</p>
           <br/>
-          <a href="https://instagram.com/perxpective.jpeg" target="__blank">
+          <a href="https://instagram.com/perxpective.jpeg" target="__blank" rel="noopener noreferrer">
             <Box bgGradient='linear(to-r, #a733ff, #ffb83d)' boxShadow={"md"} borderRadius={"lg"} maxW={300}>
               <br/>
               <Icon as={BsInstagram} boxSize={30} />
@@ -142,7 +142,7 @@ export default function Home() {
             </Box>
           </a>
           <br/>
-          <a href="https://discord.com" target="__blank">
+          <a href="https://discord.com" target="__blank" rel="noopener noreferrer">
             <Box bgGradient='linear(to-r, #599ad4, #c7e4ff)' boxShadow={"md"} borderRadius={"lg"} maxW={300}>
               <br/>
               <Icon as={BsDiscord} boxSize={30} />
@@ -150,7 +150,7 @@ export default function Home() {
             </Box>
           </a>
           <br/>
-          <a href="mailto:ervinleequanjun@outlook.com" target="__blank">
+          <a href="mailto:ervinleequanjun@outlook.com?subject=Queries" target="__blank" rel="noopener noreferrer">
             <Box bgGradient='linear(to-r, #2fa2c4, #b8e7ff)' boxShadow={"md"} borderRadius={"lg"} maxW={300}>
               <br />
               <Icon as={EmailIcon} boxSize={30} />
@@ -158,11 +158,19 @@ export default function Home() {
             </Box>
           </a>
           <br />
-          <a href="https://github.com/perxpective" target="__blank">
+          <a href="https://github.com/perxpective" target="__blank" rel="noopener noreferrer">
             <Box bgGradient='linear(to-r, #a1a1a1, #e3e3e3)' boxShadow={"md"} borderRadius={"lg"} maxW={300}>
               <br/>
               <Icon as={VscGithub} boxSize={30} />
               <p><strong>perxpective</strong></p>
+            </Box>
+          </a>
+          <br />
+          <a href="https://www.linkedin.com/in/ervin-lee-4571a7232/" target="__blank" rel="noopener noreferrer">
+            <Box bgGradient='linear(to-r, #6EC5FF, #CCFCFF)' boxShadow={"md"} borderRadius={"lg"} maxW={300}>
+              <br />
+              <Icon as={BsLinkedin} boxSize={30} />
+              <p><strong>Ervin Lee</strong></p>
             </Box>
           </a>
         </Section>
@@ -180,7 +188,7 @@ export default function Home() {
           </Heading>
           <p>Want to see how I managed to code this amazing website? Find my repository by clicking below!</p>
           <Box align="center" my={4}>
-            <a href="https://github.com/perxpective/perspective" target="_blank">
+            <a href="https://github.com/perxpective/perspective" target="_blank" rel="noopener noreferrer">
               <Button colorScheme="green" rightIcon={<ChevronRightIcon />}>
                 View GitHub Repository
               </Button>

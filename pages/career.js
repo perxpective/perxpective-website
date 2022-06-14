@@ -62,10 +62,10 @@ export default function Career() {
                                 <Box align="center" p={5}>
                                     <Img borderRadius={20} src="http://www.swimfast.com.sg/wp-content/uploads/2017/12/2-21.jpg" w={350} objectFit="cover" />
                                 </Box>        
-                                <ul>
-                                    <li>I went to Anglo-Chinese School (Primary) for 6 years and sat for the Primary School Leaving Examination</li>
-                                    <li>Scored A for English, Chinese, Mathematics and Science and obtained a T-Score of 229</li>
-                                </ul>
+                                <UnorderedList>
+                                    <ListItem>I went to Anglo-Chinese School (Primary) for 6 years and sat for the Primary School Leaving Examination</ListItem>
+                                    <ListItem>Scored A for English, Chinese, Mathematics and Science and obtained a T-Score of 229</ListItem>
+                                </UnorderedList>
                             </AccordionPanel>
                         </AccordionItem>
                         <AccordionItem>
@@ -84,7 +84,7 @@ export default function Career() {
                                 <UnorderedList>
                                     <ListItem>I got posted to the Express stream in Anglo-Chinese School (Barker Road) in 2017 where I spent four years forging unforgettable friendships and bortherhoods that last forever</ListItem>
                                     <br />
-                                    <ListItem>This is the very secondary school that gave me the opportunity to pursue my passions in computing by offering my favourite subject</ListItem>
+                                    <ListItem>This is the very secondary school that gave me the opportunity to pursue my passions in computing by offering my favourite subject, Computing!</ListItem>
                                     <br />
                                     <ListItem>I took English, Chinese B, Elementary Mathematics, Additional Mathematics, Physics, Chemistry, Computing and Social Studies with Geography Elective for my Upper Secondary subject combination</ListItem>
                                     <br />
@@ -98,7 +98,7 @@ export default function Career() {
                                     <br/> 
                                 </UnorderedList>
 
-                                <Text>Obtained the following grades for the GCE-O-Levels 2020</Text>
+                                <Text>Obtained the following grades for the GCE-O-Levels 2020:</Text>
                                 <TableContainer>
                                     <Table>
                                         <Thead>
@@ -164,10 +164,8 @@ export default function Career() {
                                     <br />
                                     <ListItem>Polytechnic has allowed me to shine and further develop my skills in cybersecirty through modules like Ethical Hacking, Digital Forensics, Web Development, Cryptography and Secure Coding</ListItem>
                                     <br />
-                                    <ListItem>SP School of Computing also offers a lot of opportunities to obtain scholarships for people with good track records</ListItem>
                                 </UnorderedList>
 
-                                <br />
                                 <Text as="u" fontSize={18}>Leadership Positions:</Text>
                                 <UnorderedList>
                                     <br />

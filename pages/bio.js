@@ -36,14 +36,14 @@ export default function About() {
                     <SimpleGrid minChildWidth="200px" spacing="10px">
                         <Box textAlign={"left"}>  
                             <UnorderedList>
-                                <ListItem>My interest in computing sparked when I attended a coding workshop organized by my school</ListItem>
+                                <ListItem>My interest in computing sparked when I attended a coding workshop organized by my secondary school in Secondary 1</ListItem>
                                 <br/>
                                 <ListItem>With my newfound passion, I chose to do Computing as an O-Level subject in my Sec 3 subject combination</ListItem>
                                 <br/>
                                 <ListItem>Applied to SP's Diploma in Infocomm Security Management (DISM) during EAE in 2020 and successfully got in!!!</ListItem>
                             </UnorderedList>
                         </Box>
-                        <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} align="center">
+                        <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ sm: 6 }} align="center">
                             <Img borderRadius={30} objectFit="cover" boxSize={350} src="/images/portrait.jpg" alt="siloutte of teenager" /> 
                         </Box>
                     </SimpleGrid>
