@@ -18,7 +18,7 @@ import {
 
 // Import Icons
 import { HamburgerIcon } from '@chakra-ui/icons'
-import { VscGithub } from 'react-icons/Vsc'
+import { VscGithub } from 'react-icons/vsc'
 
 // Import Toggle Button
 import ToggleButton from '../components/toggleButton'

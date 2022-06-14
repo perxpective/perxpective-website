@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react'
 
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import { VscGithub } from 'react-icons/Vsc'
+import { VscGithub } from 'react-icons/vsc'
 
 import NextLink from 'next/link'
 import Image from 'next/image'

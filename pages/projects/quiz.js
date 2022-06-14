@@ -13,7 +13,7 @@ import {
 } from '@chakra-ui/react'
 
 import { ChevronLeftIcon, ExternalLinkIcon } from '@chakra-ui/icons'
-import { MdQuiz } from 'react-icons/Md'
+import { MdQuiz } from 'react-icons/md'
 import NextLink from 'next/link'
 import Image from 'next/image'
 import styles from '../../styles/Home.module.css'

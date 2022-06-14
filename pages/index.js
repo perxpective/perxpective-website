@@ -14,11 +14,11 @@ import Image from 'next/image'
 import NextLink from 'next/link'
 
 // Icons
-import { FcInfo, FcIdea, FcShare } from 'react-icons/Fc'
+import { FcInfo, FcIdea, FcShare } from 'react-icons/fc'
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
-import { RiCodeBoxFill } from 'react-icons/Ri'
-import { BsDiscord, BsInstagram, BsLinkedin } from 'react-icons/Bs'
-import { VscGithub } from 'react-icons/Vsc'
+import { RiCodeBoxFill } from 'react-icons/ri'
+import { BsDiscord, BsInstagram, BsLinkedin } from 'react-icons/bs'
+import { VscGithub } from 'react-icons/vsc'
 
 import styles from '../styles/Home.module.css'
 

@@ -1,8 +1,8 @@
 import { Container, Box, Heading, Img, SimpleGrid, Icon, Text, UnorderedList, ListItem } from '@chakra-ui/react'
 import React from 'react'
 
-import { SiJavascript, SiPython, SiReact, SiAdobephotoshop, SiAdobepremierepro, SiAdobelightroom } from 'react-icons/Si'
-import { FcLinux } from 'react-icons/Fc'
+import { SiJavascript, SiPython, SiReact, SiAdobephotoshop, SiAdobepremierepro, SiAdobelightroom } from 'react-icons/si'
+import { FcLinux } from 'react-icons/fc'
 
 import Image from 'next/image'
 

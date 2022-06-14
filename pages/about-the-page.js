@@ -10,7 +10,7 @@ import {
 
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { SiYoutube } from 'react-icons/si'
-import { MdQuestionAnswer } from 'react-icons/Md'
+import { MdQuestionAnswer } from 'react-icons/md'
 
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'

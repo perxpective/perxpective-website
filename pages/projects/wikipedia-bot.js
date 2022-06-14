@@ -10,7 +10,7 @@ import {
     Icon
 } from '@chakra-ui/react'
 
-import { BsDiscord } from 'react-icons/Bs'
+import { BsDiscord } from 'react-icons/bs'
 
 import { ChevronLeftIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 
