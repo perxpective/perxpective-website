@@ -63,7 +63,7 @@ export default function AboutPage() {
                             <br />
                             <a href="https://www.youtube.com/c/devaslife">
                                 <Button rightIcon={<ChevronRightIcon />} leftIcon={<SiYoutube />} colorScheme={"red"}>
-                                    Check out his YouTube channel!
+                                    devaslife
                                 </Button>
                             </a>
                         </Section>

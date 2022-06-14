@@ -41,7 +41,7 @@ const Navbar = props => {
             <Container display="flex" p={2} maxW="100%" wrap="wrap" align="center" justify="space-between">
                 <Flex align="center" mr={5}>
                     <LinkItem href="/" path={path}>
-                        <Img borderRadius="full" borderColor="#72c275" borderWidth={2} objectFit="cover" borderStyle="Solid" h={12} w={59} src="/images/profilepic.png" alt="profile-pic-of-robot" />
+                        <Img boxSize={16} src="/images/website_logo.png" alt="websitelogo3d" />
                     </LinkItem>
                 </Flex>
                 <Stack direction={{base: 'column', md: 'row'}} display={{base: 'none', md: 'flex'}} width={{base: 'full', md: 'flex'}} alignItems="center" flexGrow={1} mt={{base: 4, nmd: 0}}>
@@ -68,20 +68,21 @@ const Navbar = props => {
                         <Menu>
                             <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options"/>
                             <MenuList>
-                                <NextLink href="/" passHref>
-                                    <MenuItem as={Link}>Home</MenuItem>
-                                </NextLink>
-
                                 <NextLink href="/bio" passHref>
                                     <MenuItem as={Link}>About</MenuItem>
+                                </NextLink>
+
+                                <NextLink href="/projects" passHref>
+                                    <MenuItem as={Link}>Projects</MenuItem>
                                 </NextLink>
 
                                 <NextLink href="/career" passHref>
                                     <MenuItem as={Link}>Career</MenuItem>
                                 </NextLink>
-                                <NextLink href="/" passHref>
-                                    <MenuItem as={Link}>GitHub Source Code</MenuItem>
-                                </NextLink>
+
+                                <Link href="https://github.com/perxpective/perspective" isExternal target={"_blank"}>
+                                    <MenuItem as={Link}>View Source Code</MenuItem>
+                                </Link>
                             </MenuList>
                         </Menu>
                     </Box>

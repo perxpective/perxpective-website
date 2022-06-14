@@ -7,6 +7,7 @@ const Main = ({ children, router }) => {
         <Box as="main" pb={8} fontFamily={"Poppins"}>
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <link rel="icon" type="image/x-icon" href="/images/website_logo.png" />
                 <title>Perspective</title>
             </Head>
             <Navbar path={router.asPath} />

@@ -1,7 +1,7 @@
-import { Container, Box, Heading, Img, SimpleGrid, Icon, Text } from '@chakra-ui/react'
+import { Container, Box, Heading, Img, SimpleGrid, Icon, Text, UnorderedList, ListItem } from '@chakra-ui/react'
 import React from 'react'
 
-import { SiJavascript, SiPython, SiFlutter, SiReact, SiNextdotjs, SiAdobephotoshop, SiAdobepremierepro, SiAdobelightroom } from 'react-icons/Si'
+import { SiJavascript, SiPython, SiReact, SiAdobephotoshop, SiAdobepremierepro, SiAdobelightroom } from 'react-icons/Si'
 import { FcLinux } from 'react-icons/Fc'
 
 import Image from 'next/image'
@@ -35,13 +35,13 @@ export default function About() {
                     </Heading>
                     <SimpleGrid minChildWidth="200px" spacing="10px">
                         <Box textAlign={"left"}>  
-                            <ul>
-                                <li>My interest in computing sparked when I attended a coding workshop organized by my school</li>
+                            <UnorderedList>
+                                <ListItem>My interest in computing sparked when I attended a coding workshop organized by my school</ListItem>
                                 <br/>
-                                <li>With my newfound passion, I chose to do Computing as an O-Level subject in my Sec 3 subject combination</li>
+                                <ListItem>With my newfound passion, I chose to do Computing as an O-Level subject in my Sec 3 subject combination</ListItem>
                                 <br/>
-                                <li>Applied to SP's Diploma in Infocomm Security Management (DISM) during EAE in 2020 and successfully got in!!!</li>
-                            </ul>
+                                <ListItem>Applied to SP's Diploma in Infocomm Security Management (DISM) during EAE in 2020 and successfully got in!!!</ListItem>
+                            </UnorderedList>
                         </Box>
                         <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} align="center">
                             <Img borderRadius={30} objectFit="cover" boxSize={350} src="/images/portrait.jpg" alt="siloutte of teenager" /> 
@@ -58,13 +58,14 @@ export default function About() {
                         My Hobbies and Interests
                     </Heading>
                     <Box>
-                        <ul>
-                            <li>📸 Taking Photos </li>
-                            <li>✈ Aviation </li>
-                            <li>🎮 Playing Games (Nintendo Games, Minecraft and Tetris!) </li>
-                            <li>🖥 Coding!</li>
-                            <li>🚩Capture-The-Flags and Hacking!</li>
-                        </ul>
+                        <UnorderedList>
+                            <ListItem>📸 Taking Photos</ListItem>
+                            <ListItem>✈ Aviation</ListItem>
+                            <ListItem>🎮 Playing Games (Nintendo Games, Minecraft and Tetris!)</ListItem>
+                            <ListItem>🖥 Coding!</ListItem>
+                            <ListItem>🚩Capture-The-Flags and Hacking!</ListItem>
+                            <ListItem>🎵 Listening to music! (Favourite genres: J-pop, Hip Hop and R&B)</ListItem>
+                        </UnorderedList>
                     </Box>
                 </Section>
             </Box>
@@ -85,17 +86,9 @@ export default function About() {
                                 <Icon as={SiPython} boxSize={10} />
                                 <p>Python</p>
                             </Box>
-                            <Box bgGradient='linear(to-r, blue.300, blue.500)' p={3} borderRadius="lg" boxShadow={"2xl"}>
-                                <Icon as={SiFlutter} boxSize={10} />
-                                <p>Flutter</p>
-                            </Box>
                             <Box bgGradient='linear(to-r, cyan.300, cyan.500)' p={3} borderRadius="lg" boxShadow={"2xl"}>
                                 <Icon as={SiReact} boxSize={10} />
                                 <p>React</p>
-                            </Box>
-                            <Box bg="gray.400" p={3} borderRadius="lg" boxShadow={"2xl"}>
-                                <Icon as={SiNextdotjs} boxSize={10} />
-                                <p>Next.js</p>
                             </Box>
                             <Box bgGradient='linear(to-r, blue.200, blue.100)' p={3} borderRadius="lg" boxShadow={"2xl"}>
                                 <Icon as={FcLinux} boxSize={10} />

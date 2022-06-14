@@ -15,7 +15,9 @@ import {
     Th,
     Td,
     TableContainer,
-    Text
+    Text,
+    UnorderedList,
+    ListItem
 } from '@chakra-ui/react'
 
 import Image from 'next/image'
@@ -79,22 +81,22 @@ export default function Career() {
                                 <Box align="center" pb={10}>
                                     <Img borderRadius="20" objectFit="cover" w={300} src="/images/barker.jfif" alt="class-photo" />
                                 </Box>
-                                <ul>
-                                    <li>I got posted to the Express stream in Anglo-Chinese School (Barker Road) in 2017 where I spent four years forging unforgettable friendships and bortherhoods that last forever</li>
+                                <UnorderedList>
+                                    <ListItem>I got posted to the Express stream in Anglo-Chinese School (Barker Road) in 2017 where I spent four years forging unforgettable friendships and bortherhoods that last forever</ListItem>
                                     <br />
-                                    <li>This is the very secondary school that gave me the opportunity to pursue my passions in computing by offering my favourite subject</li>
+                                    <ListItem>This is the very secondary school that gave me the opportunity to pursue my passions in computing by offering my favourite subject</ListItem>
                                     <br />
-                                    <li>I took English, Chinese B, Elementary Mathematics, Additional Mathematics, Physics, Chemistry, Computing and Social Studies with Geography Elective for my Upper Secondary subject combination</li>
+                                    <ListItem>I took English, Chinese B, Elementary Mathematics, Additional Mathematics, Physics, Chemistry, Computing and Social Studies with Geography Elective for my Upper Secondary subject combination</ListItem>
                                     <br />
-                                </ul>
+                                </UnorderedList>
                                 <Text as="u" fontSize={18}>Leadership Positions:</Text>
-                                <ul>
+                                <UnorderedList>
                                     <br />
-                                    <li>Joined the Digital Media CCA and was appointed the Vice-President of Photography in Sec 3</li>
+                                    <ListItem>Joined the Digital Media CCA and was appointed the Vice-President of Photography in Sec 3</ListItem>
                                     <br />
-                                    <li>My leadership responsibilities include planning CCA schedules and duties for the academic year and planning training sessions for juniors</li>
+                                    <ListItem>My leadership responsibilities include planning CCA schedules and duties for the academic year and planning training sessions for juniors</ListItem>
                                     <br/> 
-                                </ul>
+                                </UnorderedList>
 
                                 <Text>Obtained the following grades for the GCE-O-Levels 2020</Text>
                                 <TableContainer>
@@ -154,32 +156,31 @@ export default function Career() {
                                 </AccordionButton>
                             </Heading>
                             <AccordionPanel pb={4}>
-                                <Box align="center" p={10}>
+                                <Box align="center" p={{md: 10, sm: 3}} pb={5}>
                                     <Img borderRadius={20} src="https://www.sp.edu.sg/images/default-source/default-album/thumbnails-courses-security1.jpg?sfvrsn=81d8ac4_0" w={350} objectFit="cover" filter="auto" brightness="80%" />
                                 </Box>
-                                <ul>
-                                    <li>I was admitted into Singapore Polytechnic's Diploma in Infocomm Security Management (DISM) via the Early Admissions Exercise in 2021 upon receiving my O Level results</li>
+                                <UnorderedList>
+                                    <ListItem>I was admitted into Singapore Polytechnic's Diploma in Infocomm Security Management (DISM) via the Early Admissions Exercise in 2021 upon receiving my O Level results</ListItem>
                                     <br />
-                                    <li>Polytechnic has allowed me to shine and further develop my skills in cybersecirty through modules like Ethical Hacking, Digital Forensics, Web Development, Cryptography and Secure Coding</li>
+                                    <ListItem>Polytechnic has allowed me to shine and further develop my skills in cybersecirty through modules like Ethical Hacking, Digital Forensics, Web Development, Cryptography and Secure Coding</ListItem>
                                     <br />
-                                    <li>SP School of Computing also offers a lot of opportunities to obtain scholarships for people with good track records</li>
-                                </ul>
+                                    <ListItem>SP School of Computing also offers a lot of opportunities to obtain scholarships for people with good track records</ListItem>
+                                </UnorderedList>
 
                                 <br />
                                 <Text as="u" fontSize={18}>Leadership Positions:</Text>
-                                <ul>
+                                <UnorderedList>
                                     <br />
-                                    <li>Joined the SOC Ambassadors and DISM Gryphons Special Interest Group (SIG)</li>
+                                    <ListItem>Joined the SOC Ambassadors and DISM Gryphons Special Interest Group (SIG)</ListItem>
                                     <br />
-                                    <li>Appointed the Head of Research and Development of SOCA in 2022 (Year 2) </li> 
+                                    <ListItem>Appointed the Head of Research and Development of SOCA in 2022 (Year 2) </ListItem> 
                                     <br />
-                                    <li>Responsibilities: In charge of all the technical projects done by the club such as the SOCA Website hosted on a custom domain and the LEMonade app, a collaboration with Cyber Youth Singapore</li>
+                                    <ListItem>Responsibilities: In charge of all the technical projects done by the club such as the SOCA Website hosted on a custom domain and the LEMonade app, a collaboration with Cyber Youth Singapore</ListItem>
                                     <br />
-                                    <li>Appointed as an EXCO member of DISM Gryphons in charge of Media and Outreach.</li>
+                                    <ListItem>Appointed as an EXCO member of DISM Gryphons in charge of Media and Outreach.</ListItem>
                                     <br />
-                                    <li>Responsibilities: Working with my EXCO team to run events in the SIG as well as handle the publications of events that happen in Gryphons.</li>
-                                    
-                                </ul>
+                                    <ListItem>Responsibilities: Working with my EXCO team to run events in the SIG as well as handle the publications of events that happen in Gryphons.</ListItem>
+                                </UnorderedList>
                             </AccordionPanel>
                         </AccordionItem>
                         <AccordionItem>
@@ -195,15 +196,15 @@ export default function Career() {
                                 
                                 <Img src="/images/coding.jpg" borderRadius={30}  />
                                 <br />
-                                <ul>
-                                    <li>I intend to serve my national service for three years under the Digital Intelligence Service (DIS), the fourth branch of the Singapore Armed Forces to apply what I have learnt in my Polytechnic course in a military envrionment.</li>
+                                <UnorderedList>
+                                    <ListItem>I intend to serve my national service for three years under the Digital Intelligence Service (DIS), the fourth branch of the Singapore Armed Forces to apply what I have learnt in my Polytechnic course in a military envrionment.</ListItem>
                                     <br />
-                                    <li>I also aim to embark on a work-study programme during my service with a partner local university</li>
+                                    <ListItem>I also aim to embark on a work-study programme during my service with a partner local university</ListItem>
                                     <br />
-                                    <li>After serving my national service, I intend to pursue a Computer Science degree or a Information Security degree in a local university.</li>
+                                    <ListItem>After serving my national service, I intend to pursue a Computer Science degree or a Information Security degree in a local university.</ListItem>
                                     <br />
-                                    <li>I intend to work as a software engineer and a white hat full-time!</li>
-                                </ul>
+                                    <ListItem>I intend to work as a software engineer and a white hat full-time!</ListItem>
+                                </UnorderedList>
                             </AccordionPanel>
                         </AccordionItem>
                     </Accordion>
