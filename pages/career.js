@@ -175,9 +175,9 @@ export default function Career() {
                                     <br />
                                     <ListItem>Responsibilities: In charge of all the technical projects done by the club such as the SOCA Website hosted on a custom domain and the LEMonade app, a collaboration with Cyber Youth Singapore</ListItem>
                                     <br />
-                                    <ListItem>Appointed as an EXCO member of DISM Gryphons in charge of Media and Outreach.</ListItem>
+                                    <ListItem>Appointed the President of DISM Gryphons</ListItem>
                                     <br />
-                                    <ListItem>Responsibilities: Working with my EXCO team to run events in the SIG as well as handle the publications of events that happen in Gryphons.</ListItem>
+                                    <ListItem>Responsibilities: Leading and directing the EXCO team as well as overseeing all matters happening in the SIG.</ListItem>
                                 </UnorderedList>
                             </AccordionPanel>
                         </AccordionItem>
