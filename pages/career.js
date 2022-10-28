@@ -162,7 +162,7 @@ export default function Career() {
                                 <UnorderedList>
                                     <ListItem>I was admitted into Singapore Polytechnic's Diploma in Infocomm Security Management (DISM) via the Early Admissions Exercise in 2021 upon receiving my O Level results</ListItem>
                                     <br />
-                                    <ListItem>Polytechnic has allowed me to shine and further develop my skills in cybersecirty through modules like Ethical Hacking, Digital Forensics, Web Development, Cryptography and Secure Coding</ListItem>
+                                    <ListItem>Polytechnic has allowed me to shine and further develop my skills in cybersecurity through modules like Ethical Hacking, Digital Forensics, Web Development, Cryptography, Secure Coding and Securing Microsoft Windows</ListItem>
                                     <br />
                                 </UnorderedList>
 
@@ -171,7 +171,7 @@ export default function Career() {
                                     <br />
                                     <ListItem>Joined the SOC Ambassadors and DISM Gryphons Special Interest Group (SIG)</ListItem>
                                     <br />
-                                    <ListItem>Appointed the Head of Research and Development of SOCA in 2022 (Year 2) </ListItem> 
+                                    <ListItem>Appointed the Head of Research and Development of SOCA in 2022 (Year 2)</ListItem> 
                                     <br />
                                     <ListItem>Responsibilities: In charge of all the technical projects done by the club such as the SOCA Website hosted on a custom domain and the LEMonade app, a collaboration with Cyber Youth Singapore</ListItem>
                                     <br />
