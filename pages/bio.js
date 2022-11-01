@@ -78,7 +78,7 @@ export default function About() {
 
                     <Box>
                         <SimpleGrid minChildWidth="130px" spacing={10}>
-                            <Box bgGradient='linear(to-r, yellow.200, yellow.500)' p={3} borderRadius="lg" boxShadow={"2xl"}>
+                            <Box bgGradient='linear(to-r, yellow.500, yellow.500)' p={3} borderRadius="lg" boxShadow={"2xl"}>
                                 <Icon as={SiJavascript} boxSize={10}/>
                                 <p>JavaScript</p>
                             </Box>
