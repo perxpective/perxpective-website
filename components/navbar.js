@@ -80,6 +80,11 @@ const Navbar = props => {
                                     <MenuItem as={Link}>Career</MenuItem>
                                 </NextLink>
 
+
+                                <NextLink href="/about-the-page" passHref>
+                                    <MenuItem as={Link}>About Page</MenuItem>
+                                </NextLink>
+
                                 <Link href="https://github.com/perxpective/perspective" isExternal target={"_blank"}>
                                     <MenuItem as={Link}>View Source Code</MenuItem>
                                 </Link>
