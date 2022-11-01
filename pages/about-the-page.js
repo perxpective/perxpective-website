@@ -36,7 +36,7 @@ export default function AboutPage() {
                     <Box display={{ xxl: 'flex' }} textAlign={"center"}>
                         <Section>
                             <Icon as={MdQuestionAnswer} boxSize={100} />
-                            <Heading as="h2" variant="section-title">How did I developed my portfolio website?</Heading>
+                            <Heading as="h2" variant="section-title">How did I develop my portfolio website?</Heading>
                             <Text>I developed this website using mainly JavaScript with a little bit of HTML syntax required.</Text>
                             <br />
                             <Text>I am using a React Native framework called Next.js to develop the front-end with JavaScript</Text>
