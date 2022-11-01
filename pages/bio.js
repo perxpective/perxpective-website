@@ -40,7 +40,7 @@ export default function About() {
                                 <br/>
                                 <ListItem>With my newfound passion, I chose to do Computing as an O-Level subject in my Sec 3 subject combination</ListItem>
                                 <br/>
-                                <ListItem>Applied to SP's Diploma in Infocomm Security Management (DISM) during EAE in 2020 and successfully got in!!!</ListItem>
+                                <ListItem>Applied to SP's Diploma in Infocomm Security Management (DISM) during EAE in 2020 and successfully got in!</ListItem>
                             </UnorderedList>
                         </Box>
                         <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ sm: 6 }} align="center">

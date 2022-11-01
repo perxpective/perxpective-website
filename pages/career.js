@@ -169,7 +169,7 @@ export default function Career() {
                                 <Text as="u" fontSize={18}>Leadership Positions:</Text>
                                 <UnorderedList>
                                     <br />
-                                    <ListItem>Joined the SOC Ambassadors and DISM Gryphons Special Interest Group (SIG)</ListItem>
+                                    <ListItem>Joined the SOC Ambassadors and DISM Gryphons Student Interest Group (SIG)</ListItem>
                                     <br />
                                     <ListItem>Appointed the Head of Research and Development of SOCA in 2022 (Year 2)</ListItem> 
                                     <br />
