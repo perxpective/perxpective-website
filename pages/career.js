@@ -82,7 +82,7 @@ export default function Career() {
                                     <Img borderRadius="20" objectFit="cover" w={300} src="/images/barker.jfif" alt="class-photo" />
                                 </Box>
                                 <UnorderedList>
-                                    <ListItem>I got posted to the Express stream in Anglo-Chinese School (Barker Road) in 2017 where I spent four years forging unforgettable friendships and bortherhoods that last forever</ListItem>
+                                    <ListItem>I got posted to the Express stream in Anglo-Chinese School (Barker Road) in 2017 where I spent four years forging unforgettable friendships and brotherhoods that last forever</ListItem>
                                     <br />
                                     <ListItem>This is the very secondary school that gave me the opportunity to pursue my passions in computing by offering my favourite subject, Computing!</ListItem>
                                     <br />
