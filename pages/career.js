@@ -169,13 +169,13 @@ export default function Career() {
                                 <Text as="u" fontSize={18}>Leadership Positions:</Text>
                                 <UnorderedList>
                                     <br />
-                                    <ListItem>Joined the SOC Ambassadors and DISM Gryphons Student Interest Group (SIG)</ListItem>
+                                    <ListItem>Joined the School of Computing Ambassadors (SOCA) and the DISM Gryphons Student Interest Group (SIG).</ListItem>
                                     <br />
                                     <ListItem>Appointed the Head of Research and Development of SOCA in 2022 (Year 2)</ListItem> 
                                     <br />
                                     <ListItem>Responsibilities: In charge of all the technical projects done by the club such as the SOCA Website hosted on a custom domain and the LEMonade app, a collaboration with Cyber Youth Singapore</ListItem>
                                     <br />
-                                    <ListItem>Appointed the President of DISM Gryphons</ListItem>
+                                    <ListItem>Appointed the President of DISM Gryphons in 2022 (Year 2)</ListItem>
                                     <br />
                                     <ListItem>Responsibilities: Leading and directing the EXCO team as well as overseeing all matters happening in the SIG.</ListItem>
                                 </UnorderedList>
