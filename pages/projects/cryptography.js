@@ -1,4 +1,3 @@
-
 import {
     Container,
     Box,
@@ -46,8 +45,8 @@ export default function ACG() {
                 </Box>
                 <Box textAlign={"left"} p={10}>
                     <Heading as="h2" variant="section-title">Applied Cryptography Project</Heading>
-                    <Text>A Cryptography project to use encryption protocols to safely secure and verify the transfer of images from CCTV cameras to the servers to store the footages.</Text>
-                    <Text>Some examples of encryption protocols used are SHA-256 to generate digital signatures for verification, AES and RSA for the encryption and decryption of the image Base64 data and the use of PKI to generate and store public keys and private keys for the cameras and server respectively.</Text>
+                    <Text>A Cryptography project that uses modern encryption protocols to safely secure and verify the transfer of images from CCTV cameras to servers to store the footages.</Text>
+                    <Text>Some examples of the encryption protocols used are SHA-256 to generate digital signatures for verification, AES and RSA for the encryption and decryption of the image Base64 data and the use of PKI to generate and store public keys and private keys for the cameras and server respectively.</Text>
                     <Text>This was part of a second continuous assessment of Applied Cryptography, a module offered by SP DISM in Year 1 Semester 2.</Text>
                     <Text><Badge>LANGUAGE</Badge>&emsp;Python</Text>
                     <Text><Badge>YEAR</Badge>&emsp;2021</Text>
@@ -56,11 +55,7 @@ export default function ACG() {
                         <Link href="https://github.com/perxpective/ACG" isExternal>https://github.com/perxpective/ACG<ExternalLinkIcon /></Link>
                     </Text>
                 </Box>
-                <Box align={"center"}>
-
-                </Box>
             </Section>
-
 
             <footer className={styles.footer}>
                 <a
