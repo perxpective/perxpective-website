@@ -36,7 +36,9 @@ export default function About() {
             </Transitions>
           </Box>
         </Box>
+
         <br />
+
         <Box display={{ lg: "flex" }} textAlign={"left"}>
           <Section>
             <Heading as="h2" variant="section-title">
@@ -179,6 +181,9 @@ export default function About() {
             </Box>
           </Section>
         </Box>
+
+
+        <br />
 
         <Box textAlign={"left"}>
           <Section>
