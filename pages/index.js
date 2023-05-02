@@ -47,7 +47,7 @@ export default function Home() {
       <Box display={{xl:'flex'}}>
         <Section>
           <Heading as="h2" variant="section-title">
-            Hello there!
+            Hello There!
           </Heading>
           <p>My name is Ervin and I am an aspiring programmer with a passion for cybersecurity and all things tech!</p>
           <p>I love coding and I am constantly upgrading my skills in programming.</p>
@@ -64,7 +64,7 @@ export default function Home() {
             <Icon as={FcInfo} boxSize={20} />
           </Heading>
           <Heading as="h1" variant="section-title">
-            Learn more about me!
+            Learn More About Me!
           </Heading>
           <p>Find out more about my story, my passion and interests, and hopes for the future!</p>
           
@@ -86,7 +86,7 @@ export default function Home() {
             <Icon as={FcIdea} boxSize={20} />
           </Heading>
           <Heading as="h1" variant="section-title">
-            View my career!
+            View My Career!
           </Heading>
           <p>Know more about my aspirations for the future and my past experiences of my career!</p>
 
@@ -108,14 +108,14 @@ export default function Home() {
             <Icon as={RiCodeBoxFill} boxSize={20} />
           </Heading>
           <Heading as="h1" variant="section-title">
-            View my Projects!
+            View My Projects!
           </Heading>
           <p>Take a look at some of my projects that I have done in school, as well as in my own free time!</p>
 
           <Box align="center" my={4}>
             <NextLink href="/projects">
               <Button colorScheme="green" rightIcon={<ChevronRightIcon />}>
-                View my Projects
+                View My Projects
               </Button>
             </NextLink>
           </Box>
@@ -130,7 +130,7 @@ export default function Home() {
             <Icon as={FcShare} boxSize={20} />
           </Heading>
           <Heading as="h1" variant="section-title">
-            Find me on Social Media!
+            Find Me on Social Media!
           </Heading>
           <p>Keep in touch with me across other social media platforms!</p>
           <br/>
@@ -190,7 +190,7 @@ export default function Home() {
           <Box align="center" my={4}>
             <a href="https://github.com/perxpective/perspective" target="_blank" rel="noopener noreferrer">
               <Button colorScheme="green" rightIcon={<ChevronRightIcon />}>
-                View GitHub Repository
+                View GitHub Repo
               </Button>
             </a>
           </Box>
