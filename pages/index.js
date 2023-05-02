@@ -132,6 +132,8 @@ export default function Home() {
         </Section>
       </Box>
 
+      <Divider />
+      
       <Box display={{ xl: "flex" }} align="center">
         <Section>
           <Heading as="h1" size="lg">
@@ -293,7 +295,6 @@ export default function Home() {
           </a>
         </Section>
       </Box>
-
       <Divider />
       <br />
       <Box display={{ xl: "flex" }} align="center">
