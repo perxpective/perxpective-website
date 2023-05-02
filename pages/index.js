@@ -19,6 +19,7 @@ import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import { RiCodeBoxFill } from 'react-icons/ri'
 import { BsDiscord, BsInstagram, BsLinkedin } from 'react-icons/bs'
 import { VscGithub } from 'react-icons/vsc'
+import { SiGitbook } from 'react-icons/si'
 
 import styles from '../styles/Home.module.css'
 
@@ -28,37 +29,62 @@ import Transitions from '../components/transition'
 export default function Home() {
   return (
     <Container align={"center"}>
-      <Box display={{ xl: 'flex' }} align="center">
+      <Box display={{ xl: "flex" }} align="center">
         <Box flexGrow={1}>
-          <Box flexShrink={0} mt={{base:4, md:0}} align="center">
-            <Img borderRadius="full" borderColor="#72c275" borderWidth={2} objectFit="cover" borderStyle="Solid" boxSize={150} src="/images/profilepic.png" alt="profile-pic-of-robot"/>
+          <Box flexShrink={0} mt={{ base: 4, md: 0 }} align="center">
+            <Img
+              borderRadius="full"
+              borderColor="#72c275"
+              borderWidth={2}
+              objectFit="cover"
+              borderStyle="Solid"
+              boxSize={150}
+              src="/images/profilepic.png"
+              alt="profile-pic-of-robot"
+            />
           </Box>
           <Transitions>
             <Heading as="h1" variant="Page-Title">
               Perspective
             </Heading>
-            <p>A portfolio website developed using <code>Next.js</code> and Chakra UI</p>
+            <p>
+              A portfolio website developed using <code>Next.js</code> and
+              Chakra UI
+            </p>
           </Transitions>
         </Box>
       </Box>
-      <br/>
-      <Divider/>
-      <br/>
-      <Box display={{xl:'flex'}}>
+      <br />
+      <Divider />
+      <br />
+      <Box display={{ xl: "flex" }}>
         <Section>
           <Heading as="h2" variant="section-title">
             Hello There!
           </Heading>
-          <p>My name is Ervin and I am an aspiring programmer with a passion for cybersecurity and all things tech!</p>
-          <p>I love coding and I am constantly upgrading my skills in programming.</p>
-          <p>My main principle in life is to treat everyone with respect no matter what their backgrounds are and I try my best to lend a helping hand or a listening ear to those who need it.</p>
-          <p>I love being a leader who takes responsibility, initiative and guides others to becoming a better person in life &#9829; </p>
+          <p>
+            My name is Ervin and I am an aspiring programmer with a passion for
+            cybersecurity and all things tech!
+          </p>
+          <p>
+            I love coding and I am constantly upgrading my skills in
+            programming.
+          </p>
+          <p>
+            My main principle in life is to treat everyone with respect no
+            matter what their backgrounds are and I try my best to lend a
+            helping hand or a listening ear to those who need it.
+          </p>
+          <p>
+            I love being a leader who takes responsibility, initiative and
+            guides others to becoming a better person in life &#9829;{" "}
+          </p>
         </Section>
       </Box>
 
       <Divider />
 
-      <Box display={{ xl:'flex'}} align="center">
+      <Box display={{ xl: "flex" }} align="center">
         <Section>
           <Heading as="h1" size="lg">
             <Icon as={FcInfo} boxSize={20} />
@@ -66,11 +92,14 @@ export default function Home() {
           <Heading as="h1" variant="section-title">
             Learn More About Me!
           </Heading>
-          <p>Find out more about my story, my passion and interests, and hopes for the future!</p>
-          
+          <p>
+            Find out more about my story, my passion and interests, and hopes
+            for the future!
+          </p>
+
           <Box align="center" my={4}>
             <NextLink href="/bio">
-              <Button colorScheme="green" rightIcon={<ChevronRightIcon/>}>
+              <Button colorScheme="green" rightIcon={<ChevronRightIcon />}>
                 Go to About
               </Button>
             </NextLink>
@@ -80,7 +109,7 @@ export default function Home() {
 
       <Divider />
 
-      <Box display={{ xl:'flex' }} align="center">
+      <Box display={{ xl: "flex" }} align="center">
         <Section>
           <Heading as="h1" size="lg">
             <Icon as={FcIdea} boxSize={20} />
@@ -88,12 +117,44 @@ export default function Home() {
           <Heading as="h1" variant="section-title">
             View My Career!
           </Heading>
-          <p>Know more about my aspirations for the future and my past experiences of my career!</p>
+          <p>
+            Know more about my aspirations for the future and my past
+            experiences of my career!
+          </p>
 
           <Box align="center" my={4}>
             <NextLink href="/career">
-              <Button colorScheme="green" rightIcon={<ChevronRightIcon/>}>
+              <Button colorScheme="green" rightIcon={<ChevronRightIcon />}>
                 View Career
+              </Button>
+            </NextLink>
+          </Box>
+        </Section>
+      </Box>
+
+      <Box display={{ xl: "flex" }} align="center">
+        <Section>
+          <Heading as="h1" size="lg">
+            <Icon as={SiGitbook} boxSize={20} />
+          </Heading>
+          <Heading as="h1" variant="section-title">
+            Check Out My Blogs!
+          </Heading>
+          <p>
+            I do CTF write-ups on GitBook. I also occasionally blog on Medium.
+            Check them out below!
+          </p>
+          <Box align="center" my={4}>
+            <NextLink href="https://perxpectives.gitbook.io">
+              <Button colorScheme="green" rightIcon={<ChevronRightIcon />}>
+                View GitBook
+              </Button>
+            </NextLink>
+          </Box>
+          <Box align="center" my={4}>
+            <NextLink href="https://medium.com/@perxpectives">
+              <Button colorScheme="green" rightIcon={<ChevronRightIcon />}>
+                View Medium
               </Button>
             </NextLink>
           </Box>
@@ -102,7 +163,7 @@ export default function Home() {
 
       <Divider />
 
-      <Box display={{ xl: 'flex' }} align="center">
+      <Box display={{ xl: "flex" }} align="center">
         <Section>
           <Heading as="h1" size="lg">
             <Icon as={RiCodeBoxFill} boxSize={20} />
@@ -110,8 +171,10 @@ export default function Home() {
           <Heading as="h1" variant="section-title">
             View My Projects!
           </Heading>
-          <p>Take a look at some of my projects that I have done in school, as well as in my own free time!</p>
-
+          <p>
+            Take a look at some of my projects that I have done in school, as
+            well as in my own free time!
+          </p>
           <Box align="center" my={4}>
             <NextLink href="/projects">
               <Button colorScheme="green" rightIcon={<ChevronRightIcon />}>
@@ -124,7 +187,7 @@ export default function Home() {
 
       <Divider />
 
-      <Box display={{ xxl: 'flex' }} align="center">
+      <Box display={{ xxl: "flex" }} align="center">
         <Section>
           <Heading as="h1" size="lg">
             <Icon as={FcShare} boxSize={20} />
@@ -133,52 +196,107 @@ export default function Home() {
             Find Me on Social Media!
           </Heading>
           <p>Keep in touch with me across other social media platforms!</p>
-          <br/>
-          <a href="https://instagram.com/perxpective.jpeg" target="__blank" rel="noopener noreferrer">
-            <Box bgGradient='linear(to-r, #a733ff, #ffb83d)' boxShadow={"md"} borderRadius={"lg"} maxW={300}>
-              <br/>
+          <br />
+          <a
+            href="https://instagram.com/perxpective.jpeg"
+            target="__blank"
+            rel="noopener noreferrer"
+          >
+            <Box
+              bgGradient="linear(to-r, #a733ff, #ffb83d)"
+              boxShadow={"md"}
+              borderRadius={"lg"}
+              maxW={300}
+            >
+              <br />
               <Icon as={BsInstagram} boxSize={30} />
-              <p><strong>@perxpective.jpeg</strong></p>
+              <p>
+                <strong>@perxpective.jpeg</strong>
+              </p>
             </Box>
           </a>
-          <br/>
-          <a href="https://discord.com" target="__blank" rel="noopener noreferrer">
-            <Box bgGradient='linear(to-r, #599ad4, #c7e4ff)' boxShadow={"md"} borderRadius={"lg"} maxW={300}>
-              <br/>
+          <br />
+          <a
+            href="https://discord.com"
+            target="__blank"
+            rel="noopener noreferrer"
+          >
+            <Box
+              bgGradient="linear(to-r, #599ad4, #c7e4ff)"
+              boxShadow={"md"}
+              borderRadius={"lg"}
+              maxW={300}
+            >
+              <br />
               <Icon as={BsDiscord} boxSize={30} />
-              <p><strong>perspective #9963</strong></p>
+              <p>
+                <strong>perspective #9963</strong>
+              </p>
             </Box>
           </a>
-          <br/>
-          <a href="mailto:ervinleequanjun@outlook.com?subject=Queries" target="__blank" rel="noopener noreferrer">
-            <Box bgGradient='linear(to-r, #2fa2c4, #b8e7ff)' boxShadow={"md"} borderRadius={"lg"} maxW={300}>
+          <br />
+          <a
+            href="mailto:ervinleequanjun@outlook.com?subject=Queries"
+            target="__blank"
+            rel="noopener noreferrer"
+          >
+            <Box
+              bgGradient="linear(to-r, #2fa2c4, #b8e7ff)"
+              boxShadow={"md"}
+              borderRadius={"lg"}
+              maxW={300}
+            >
               <br />
               <Icon as={EmailIcon} boxSize={30} />
-              <p><strong>Email</strong></p>
+              <p>
+                <strong>Email</strong>
+              </p>
             </Box>
           </a>
           <br />
-          <a href="https://github.com/perxpective" target="__blank" rel="noopener noreferrer">
-            <Box bgGradient='linear(to-r, #a1a1a1, #e3e3e3)' boxShadow={"md"} borderRadius={"lg"} maxW={300}>
-              <br/>
+          <a
+            href="https://github.com/perxpective"
+            target="__blank"
+            rel="noopener noreferrer"
+          >
+            <Box
+              bgGradient="linear(to-r, #a1a1a1, #e3e3e3)"
+              boxShadow={"md"}
+              borderRadius={"lg"}
+              maxW={300}
+            >
+              <br />
               <Icon as={VscGithub} boxSize={30} />
-              <p><strong>perxpective</strong></p>
+              <p>
+                <strong>perxpective</strong>
+              </p>
             </Box>
           </a>
           <br />
-          <a href="https://www.linkedin.com/in/ervin-lee-4571a7232/" target="__blank" rel="noopener noreferrer">
-            <Box bgGradient='linear(to-r, #6EC5FF, #CCFCFF)' boxShadow={"md"} borderRadius={"lg"} maxW={300}>
+          <a
+            href="https://www.linkedin.com/in/ervin-lee-4571a7232/"
+            target="__blank"
+            rel="noopener noreferrer"
+          >
+            <Box
+              bgGradient="linear(to-r, #6EC5FF, #CCFCFF)"
+              boxShadow={"md"}
+              borderRadius={"lg"}
+              maxW={300}
+            >
               <br />
               <Icon as={BsLinkedin} boxSize={30} />
-              <p><strong>Ervin Lee</strong></p>
+              <p>
+                <strong>Ervin Lee</strong>
+              </p>
             </Box>
           </a>
         </Section>
       </Box>
 
       <Divider />
-      <br/>
-      <Box display={{ xl: 'flex' }} align="center">
+      <br />
+      <Box display={{ xl: "flex" }} align="center">
         <Section>
           <Heading as="h1" size="lg">
             <Icon as={VscGithub} boxSize={20} />
@@ -186,9 +304,16 @@ export default function Home() {
           <Heading as="h2" variant="section-title">
             View the Source Code
           </Heading>
-          <p>Want to see how I managed to code this amazing website? Find my repository by clicking below!</p>
+          <p>
+            Want to see how I managed to code this amazing website? Find my
+            repository by clicking below!
+          </p>
           <Box align="center" my={4}>
-            <a href="https://github.com/perxpective/perspective" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/perxpective/perspective"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button colorScheme="green" rightIcon={<ChevronRightIcon />}>
                 View GitHub Repo
               </Button>
@@ -196,18 +321,19 @@ export default function Home() {
           </Box>
         </Section>
       </Box>
+
       <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
     </Container>
-  )
+  );
 }
