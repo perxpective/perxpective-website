@@ -58,10 +58,7 @@ export default function Career() {
                                     <AccordionIcon />
                                 </AccordionButton>
                             </Heading>
-                            <AccordionPanel pb={4}>
-                                <Box align="center" p={5}>
-                                    <Img borderRadius={20} src="http://www.swimfast.com.sg/wp-content/uploads/2017/12/2-21.jpg" w={350} objectFit="cover" />
-                                </Box>        
+                            <AccordionPanel pb={4}>      
                                 <UnorderedList>
                                     <ListItem>I went to Anglo-Chinese School (Primary) for 6 years and sat for the Primary School Leaving Examination</ListItem>
                                     <ListItem>Scored A for English, Chinese, Mathematics and Science and obtained a T-Score of 229</ListItem>
