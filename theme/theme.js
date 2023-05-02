@@ -19,11 +19,11 @@ const components = {
                 textDecorationThickness: 1,
                 marginTop: 3,
                 marginBottom: 4,
-                fontFamily: 'poppins'
+                fontFamily: 'Inter'
             },
             
             'Page-Title': {
-                fontFamily: 'poppins'
+                fontFamily: 'Inter'
             }
         }
     },
@@ -47,8 +47,8 @@ const config = {
 
 const fonts = {
     fonts: {
-        heading: `'Poppins', sans-serif`,
-        body: `'Poppins', sans-serif`
+        heading: `'Inter', sans-serif`,
+        body: `'Inter', sans-serif`
     }
 }
 

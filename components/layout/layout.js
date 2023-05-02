@@ -4,7 +4,7 @@ import Navbar from '../navbar'
 
 const Main = ({ children, router }) => {
     return (
-        <Box as="main" pb={8} fontFamily={"Poppins"}>
+        <Box as="main" pb={8} fontFamily={"Inter"}>
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" type="image/x-icon" href="/images/website_logo.png" />
