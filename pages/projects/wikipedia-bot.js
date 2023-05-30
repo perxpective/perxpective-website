@@ -59,9 +59,9 @@ export default function WikipediaBot() {
                     </Text>
                 </Box>
                 <Box align={"center"}>
-                        <Box p={1}><Img borderRadius={20} src="/images/wikipedia-bot.png" w={600} objectFit="cover" /> </Box>
-                        <Box p={1}><Img borderRadius={20} src="/images/wikipedia-bot2.png" w={600} objectFit="cover" /> </Box>
-                        <Box p={1}><Img borderRadius={20} src="/images/wikipedia-bot3.png" w={600} objectFit="cover" /> </Box>
+                    <Box p={1}><Img borderRadius={20} src="/images/wikipedia-bot.png" w={600} objectFit="cover" /> </Box>
+                    <Box p={1}><Img borderRadius={20} src="/images/wikipedia-bot2.png" w={600} objectFit="cover" /> </Box>
+                    <Box p={1}><Img borderRadius={20} src="/images/wikipedia-bot3.png" w={600} objectFit="cover" /> </Box>
                 </Box>
             </Section>
             

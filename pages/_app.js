@@ -6,16 +6,16 @@ import theme from '../theme/theme'
 import Fonts from '../components/font'
 
 function MyApp({ Component, pageProps, router }) {
-  return (
-    <ChakraProvider theme={theme}>
-      <Fonts />
-      <Layout router={router}>
-        <AnimatePresence exitBeforeEnter initial={true}>
-          <Component {...pageProps} key={router.route} />
-        </AnimatePresence>
-      </Layout>
-    </ChakraProvider>
-  )
+	return (
+		<ChakraProvider theme={theme}>
+			<Fonts />
+			<Layout router={router}>
+				<AnimatePresence exitBeforeEnter initial={true}>
+					<Component {...pageProps} key={router.route} />
+				</AnimatePresence>
+			</Layout>
+		</ChakraProvider>
+	)
 }
 
 export default MyApp

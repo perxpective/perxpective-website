@@ -41,14 +41,17 @@ export default function Career() {
                         <Heading as="h1" variant="Page-Title">
                             Career
                         </Heading>
-                        <p>View my career pathways; past, present and future</p>
+                        <p>View my career pathways - past, present and future</p>
                     </Transitions>
                 </Box>
             </Box>
             <br/>
             <Box textAlign={"left"}>
+                <Heading as="h1">
+                    Educational Background
+                </Heading>
                 <Section>
-                    <Accordion>
+                    <Accordion allowToggle>
                         <AccordionItem>
                             <Heading as="h2" variant="section-title">
                                 <AccordionButton>
@@ -188,7 +191,6 @@ export default function Career() {
                                 </AccordionButton>
                             </Heading>
                             <AccordionPanel pb={4}>
-                                
                                 <Img src="/images/coding.jpg" borderRadius={30}  />
                                 <br />
                                 <UnorderedList>
@@ -205,6 +207,57 @@ export default function Career() {
                     </Accordion>
                 </Section>
             </Box>
+
+            <Box textAlign={"left"}>
+                <Heading as="h1">
+                    Work Experience
+                </Heading>
+                <Section>
+                    <Accordion allowToggle>
+                        <AccordionItem>
+                            <Heading as="h2" variant="section-title">
+                                <AccordionButton>
+                                    <Box flex='1' textAlign='left'>
+                                        The Digital and Intelligence Service | March 2023 - August 2023
+                                    </Box>
+                                    <AccordionIcon />
+                                </AccordionButton>
+                            </Heading>
+                            <AccordionPanel pb={4}>
+                                <Flex>
+                                    <Box p={5} w="100%" h="100%" align="center">
+                                        <Img borderRadius={20} src="/images/dis.png" w={300} objectFit="cover" />
+                                    </Box>
+                                    <Box p={5} w="100%" h="100%" align="center">
+                                        <Heading as="h2">
+                                            Cyber Range Assistant
+                                        </Heading>
+                                        <Heading as="h4">
+                                            The Digital and Intelligence Service | March 2023 - August 2023
+                                        </Heading>
+                                        <Text>
+                                            I had the opportunity to work as a Cyber Range Assistant as part of my final year internship programme in Singapore Polytechnic. I was assigned to the Cyber Test and Evaluation Center (CyTEC) where I experimented with new technologies and tools to develop cyber range environments for cyber exercises and trainings happening in the DIS.
+                                        </Text>
+                                        <Text>
+                                            One of the main learning points and highlights for this internship was the implementation of Infrastructure-as-Code (IaC) using Ansible to automate the deployment of virtual machines and the configuration of the network for the cyber range environment. This was done to reduce the time taken to set up the cyber range environment and to reduce the chances of human error.
+                                        </Text>
+                                        <Text>
+                                            This project was piloted in the Critical Infrastructure Defense Exercise (CIDeX) 2023 that happened in November 2023 at the National University of Singapore (NUS) jointly conducted by the DIS together with other critical government agencies and companies.
+                                        </Text>
+                                        <Text>
+                                            Through this internship, I was able to apply what I have learnt in my Polytechnic course and also learn new skills such as Ansible, Terraform, Docker and basic system administration.
+                                        </Text>
+                                        <Text as="b">
+                                            Key Skills: <Badge>Ansible</Badge> <Badge>Terraform</Badge> <Badge>Docker</Badge> <Badge>System Administration</Badge> <Badge>Infrastructure-as-Code</Badge> <Badge>Linux</Badge> <Badge>Windows</Badge> <Badge>Virtualization</Badge> <Badge>ESXI</Badge>
+                                        </Text>
+                                    </Box>
+                                </Flex>
+                            </AccordionPanel>
+                        </AccordionItem>
+                    </Accordion>
+                </Section>
+            </Box>
+
             <br />
             <footer className={styles.footer}>
                 <a
