@@ -228,13 +228,13 @@ export default function Career() {
                             <AccordionPanel pb={4}>
                                 <Flex>
                                     <Box p={5} w="100%" h="100%" align="right">
-                                        <Img borderRadius={20} src="https://www.mindef.gov.sg/oms/dis/images/identity/logo/logo-dis-crest01.png" w={200} objectFit="cover" />
+                                        <Img borderRadius={20} src="https://www.mindef.gov.sg/oms/dis/images/identity/logo/logo-dis-crest01.png" w={100} objectFit="cover" />
                                     </Box>
                                     <Box p={5} w="100%" h="100%" align="left">
-                                        <Heading as="h2">
+                                        <Heading as="h4" variant="section-title-2" fontSize='sm'>
                                             Cyber Range Assistant
                                         </Heading>
-                                        <Heading as="h4">
+                                        <Heading as="h4" variant="section-title-2" fontSize='sm'>
                                             The Digital and Intelligence Service | March 2023 - August 2023
                                         </Heading>
                                     </Box>
