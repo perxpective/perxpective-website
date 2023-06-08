@@ -21,6 +21,13 @@ const components = {
                 marginBottom: 4,
                 fontFamily: 'Inter'
             },
+
+            'section-title-2': {
+                fontSize: 20,
+                marginTop: 3,
+                marginBottom: 4,
+                fontFamily: 'Inter'
+            },
             
             'Page-Title': {
                 fontFamily: 'Inter'

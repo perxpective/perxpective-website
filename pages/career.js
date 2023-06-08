@@ -49,7 +49,7 @@ export default function Career() {
             </Box>
             <br/>
             <Box textAlign={"left"}>
-                <Heading as="h1" variant="section-title">
+                <Heading as="h1" variant="section-title-2">
                     Educational Background
                 </Heading>
                 <Section>
@@ -211,7 +211,7 @@ export default function Career() {
             </Box>
 
             <Box textAlign={"left"}>
-                <Heading as="h1" variant="section-title">
+                <Heading as="h1" variant="section-title-2">
                     Work Experience
                 </Heading>
                 <Section>
@@ -228,7 +228,7 @@ export default function Career() {
                             <AccordionPanel pb={4}>
                                 <Flex>
                                     <Box p={5} w="100%" h="100%" align="right">
-                                        <Img borderRadius={20} src="/images/dis.png" w={300} objectFit="cover" />
+                                        <Img borderRadius={20} src="https://www.mindef.gov.sg/oms/dis/images/identity/logo/logo-dis-crest01.png" w={200} objectFit="cover" />
                                     </Box>
                                     <Box p={5} w="100%" h="100%" align="left">
                                         <Heading as="h2">
