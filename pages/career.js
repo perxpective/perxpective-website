@@ -227,11 +227,11 @@ export default function Career() {
                             </Heading>
                             <AccordionPanel pb={4}>
                                 <Flex>
-                                    <Box p={5} w="100%" h="100%" align="right">
+                                    <Box p={5} w="100%" h="100%" align="left">
                                         <Img borderRadius={20} src="https://www.mindef.gov.sg/oms/dis/images/identity/logo/logo-dis-crest01.png" w={100} objectFit="cover" />
                                     </Box>
                                     <Box p={5} w="100%" h="100%" align="left">
-                                        <Heading as="h4" variant="section-title-2" fontSize='sm'>
+                                        <Heading as="h4" variant="section-title-2" fontSize='md'>
                                             Cyber Range Assistant
                                         </Heading>
                                         <Heading as="h4" variant="section-title-2" fontSize='sm'>
