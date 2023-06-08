@@ -6,7 +6,8 @@
       2,
       {
         "ignore": [
-          "jsx"
+          "jsx",
+          "global"
         ]
       }
     ]
