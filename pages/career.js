@@ -1,5 +1,7 @@
 import { 
-    Container, 
+    Container,
+    Badge,
+    Flex,
     Box, 
     Heading, 
     Img, 
