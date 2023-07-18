@@ -20,8 +20,7 @@ import {
     Text,
     UnorderedList,
     ListItem,
-    Grid,
-    GridItem
+    Center
 } from '@chakra-ui/react'
 
 import Image from 'next/image'
