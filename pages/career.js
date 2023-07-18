@@ -19,7 +19,8 @@ import {
     TableContainer,
     Text,
     UnorderedList,
-    ListItem
+    ListItem,
+    Grid
 } from '@chakra-ui/react'
 
 import Image from 'next/image'
@@ -226,9 +227,9 @@ export default function Career() {
                                 </AccordionButton>
                             </Heading>
                             <AccordionPanel pb={4}>
-                                <Flex>
+                                {/* <Flex>
                                     <Box p={5} w="100%" h="100%" align="left">
-                                        <Img borderRadius={20} src="https://www.mindef.gov.sg/oms/dis/images/identity/logo/logo-dis-crest01.png" w={100} objectFit="cover" />
+                                        <Img borderRadius={20} src="https://www.mindef.gov.sg/oms/dis/images/identity/logo/logo-dis-crest01.png" w={90} objectFit="cover" />
                                     </Box>
                                     <Box p={5} w="100%" h="100%" align="left">
                                         <Heading as="h4" variant="section-title-2" fontSize='md'>
@@ -238,7 +239,22 @@ export default function Career() {
                                             The Digital and Intelligence Service | March 2023 - August 2023
                                         </Heading>
                                     </Box>
-                                </Flex>
+                                </Flex> */}
+                                <Box textAlign="center">
+                                    <Grid
+                                        templateColumns="repeat(auto-fit, minmax(120px, 1fr))"
+                                        gap={4}
+                                        maxWidth="800px"
+                                        margin="0 auto"
+                                    >
+                                        <GridItem>
+                                            <Image src="https://www.mindef.gov.sg/oms/dis/images/identity/logo/logo-dis-crest01.png"/>
+                                            <Text textAlign="center" mt={2}>
+                                                The Digital and Intelligence Service
+                                            </Text>
+                                        </GridItem>
+                                    </Grid>
+                                </Box>
                                 <Box>
                                     <Text>
                                         I had the opportunity to work as a Cyber Range Assistant as part of my final year internship programme in Singapore Polytechnic. I was assigned to the Cyber Test and Evaluation Center (CyTEC) where I experimented with new technologies and tools to develop cyber range environments for cyber exercises and trainings happening in the DIS.
