@@ -243,7 +243,7 @@ export default function Career() {
                                 
                                 <Center>
                                     <Flex direction="column" alignItems="center">
-                                        <Flex alignItems="center">
+                                        <Flex alignItems="left">
                                             <Box width="50px" height="50px" marginRight="10px">
                                                 <Img borderRadius={20} src="https://www.mindef.gov.sg/oms/dis/images/identity/logo/logo-dis-crest01.png" w={10} objectFit="cover" />
                                             </Box>
