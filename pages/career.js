@@ -245,13 +245,10 @@ export default function Career() {
                                     <Flex direction="column" alignItems="center">
                                         <Flex alignItems="center">
                                             <Box width="50px" height="50px" marginRight="10px">
-                                                <Img borderRadius={20} src="https://www.mindef.gov.sg/oms/dis/images/identity/logo/logo-dis-crest01.png" w={90} objectFit="cover" />
+                                                <Img borderRadius={20} src="https://www.mindef.gov.sg/oms/dis/images/identity/logo/logo-dis-crest01.png" w={10} objectFit="cover" />
                                             </Box>
                                             <Box>
-                                                <Heading as="h4" variant="section-title-2" fontSize='md'>Cyber Range Assistant</Heading>
-                                                <Heading as="h4" variant="section-title-2" fontSize='sm'>
-                                                    The Digital and Intelligence Service | March 2023 - August 2023
-                                                </Heading> 
+                                                <Heading as="h3" variant="section-title-2" fontSize='md'>Cyber Range Assistant</Heading>
                                             </Box>
                                         </Flex>
                                     </Flex>
