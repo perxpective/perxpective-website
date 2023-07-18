@@ -244,10 +244,10 @@ export default function Career() {
                                 <Center>
                                     <Flex direction="column" alignItems="center">
                                         <Flex alignItems="center">
-                                            <Box width="100px" height="100px" marginRight="10px">
+                                            <Box width="100px" height="100px" marginRight="10px" align="center" justify="center">
                                                 <Img borderRadius={20} src="https://www.mindef.gov.sg/oms/dis/images/identity/logo/logo-dis-crest01.png" w={100} objectFit="cover" />
                                             </Box>
-                                            <Box p={5} w="100%" h="100%" align="left">
+                                            <Box p={5} w="100%" h="100%" align="left" align="center" justify="center">
                                                 <Heading as="h4" variant="section-title-2" fontSize='lg' p={0}>Cyber Range Assistant</Heading>
                                                 <Heading as="h4" variant="section-title-2" fontSize='sm' p={1}>
                                                     The Digital and Intelligence Service (DIS)
