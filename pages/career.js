@@ -241,21 +241,23 @@ export default function Career() {
                                         </Heading>
                                     </Box>
                                 </Flex> */}
-                                <Box textAlign="center">
-                                    <Grid
-                                        templateColumns="repeat(auto-fit, minmax(120px, 1fr))"
-                                        gap={4}
-                                        maxWidth="800px"
-                                        margin="0 auto"
-                                    >
-                                        <GridItem>
-                                            <Image src="https://www.mindef.gov.sg/oms/dis/images/identity/logo/logo-dis-crest01.png"/>
-                                            <Text textAlign="center" mt={2}>
-                                                The Digital and Intelligence Service
-                                            </Text>
-                                        </GridItem>
-                                    </Grid>
-                                </Box>
+                                
+                                <Center>
+                                    <Flex direction="column" alignItems="center">
+                                        <Flex alignItems="center">
+                                            <Box width="50px" height="50px" marginRight="10px">
+                                                <Img borderRadius={20} src="https://www.mindef.gov.sg/oms/dis/images/identity/logo/logo-dis-crest01.png" w={90} objectFit="cover" />
+                                            </Box>
+                                            <Box>
+                                                <Heading as="h4" variant="section-title-2" fontSize='md'>Cyber Range Assistant</Heading>
+                                                <Heading as="h4" variant="section-title-2" fontSize='sm'>
+                                                    The Digital and Intelligence Service | March 2023 - August 2023
+                                                </Heading> 
+                                            </Box>
+                                        </Flex>
+                                    </Flex>
+                                </Center>
+
                                 <Box>
                                     <Text>
                                         I had the opportunity to work as a Cyber Range Assistant as part of my final year internship programme in Singapore Polytechnic. I was assigned to the Cyber Test and Evaluation Center (CyTEC) where I experimented with new technologies and tools to develop cyber range environments for cyber exercises and trainings happening in the DIS.
