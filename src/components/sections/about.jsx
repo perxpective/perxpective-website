@@ -14,6 +14,7 @@ const About = () => {
             />
             <Heading
                 as="h1"
+                pb={3}
                 fontSize={{ base: "20px", sm: "25px", md: "30px" }}
                 fontWeight={{ base: "bold", md: "extrabold" }}
             >

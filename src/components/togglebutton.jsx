@@ -10,7 +10,7 @@ const ToggleButton = () => {
                 size='sm' 
                 onClick={toggleColorMode} 
                 p={1}
-                colorScheme={useColorModeValue("purple", "yellow")}
+                colorScheme={useColorModeValue("blue", "yellow")}
             >
                 {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
             </Button>
