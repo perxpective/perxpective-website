@@ -2,23 +2,9 @@ import { Box, Card, CardBody, Container, Heading, Image, Stack, Text, useColorMo
 import React from 'react'
 import Section from '../section'
 import Paragraph from '../text/paragraph'
+import { Schools } from '../../data/index'
 
 const Education = () => {
-    const Schools = [
-        {
-            name: "Singapore Polytechnic",
-            course: "Diploma in Cybersecurity and Digital Forensics",
-            year: "2021 - 2024",
-            logo: "/images/sp.png"
-        },
-        {
-            name: "Anglo-Chinese School (Barker Road)",
-            course: "GCE O-Levels",
-            year: "2017 - 2020",
-            logo: "/images/acsbr.png"
-        }
-    ]
-    
     return (
         <Section top={"1rem"}>
             <Heading

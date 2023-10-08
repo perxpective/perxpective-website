@@ -15,6 +15,8 @@ import OfficeModel from './components/models/office'
 
 // Chakra UI Components
 import { Container } from '@chakra-ui/react'
+import TableModel from './components/models/table'
+import Projects from './components/sections/projects'
 
 function App() {
 	return (
@@ -29,6 +31,8 @@ function App() {
 		<Education />
 		<OfficeModel />
 		<Work />
+		<TableModel />
+		<Projects />
 	</Container>
 	)
 }

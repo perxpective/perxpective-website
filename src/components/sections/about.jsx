@@ -26,7 +26,7 @@ const About = () => {
                 Currently a diploma student at <b>Singapore Polytechnic</b> specializing in <u>Cybersecurity and Digital Forensics</u> 🔐!
             </Paragraph>
             <Paragraph py={4}>
-                I'm a <i>organised, proactive, collaborative, hard-working</i> and <i>passionate</i> <u>problem solver</u> 👥.
+                I'm an <i>organised, proactive, collaborative, hard-working</i> and <i>passionate</i> <u>problem solver</u> 👥.
             </Paragraph>
             <Paragraph py={4}>
                 I'm also an <i>independent learner</i> who can adapt to changes quickly. I'm always looking for opportunities to learn, grow and upskill as a developer 💻.

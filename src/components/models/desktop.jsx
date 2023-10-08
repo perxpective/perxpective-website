@@ -1,9 +1,7 @@
 import { Container, Spinner } from '@chakra-ui/react'
 import { OrbitControls } from '@react-three/drei'
-import { Canvas, useLoader, useThree } from '@react-three/fiber'
+import { Canvas } from '@react-three/fiber'
 import React, { Suspense } from 'react'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
-import * as THREE from 'three'
 import Model from './model'
 
 const DesktopModel = () => {
@@ -29,7 +27,7 @@ const DesktopModel = () => {
 					camera={{ position: [-10, 3, -10], fov: 16 }}
 					viewport={{ zoom: 3 }}
 				>
-						<Model path={"/models/Desktop.glb"} scale={2} />
+						<Model path={"/models/Desktop.glb"} scale={1.5} />
 						<OrbitControls autoRotate={true} />
 				</Canvas>
 			</Suspense>

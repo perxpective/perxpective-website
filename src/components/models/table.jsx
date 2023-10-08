@@ -4,12 +4,12 @@ import { Canvas } from '@react-three/fiber'
 import React, { Suspense } from 'react'
 import Model from './model'
 
-const ClassroomModel = () => {
+export const TableModel = () => {
     return (
         <Container
             w={{ md: '85vw' }}
-            h={{ base: '10rem', sm: '20rem', md: '28rem' }}
-            id={"education"}
+            h={{ base: '10rem', sm: '20rem', md: '23rem' }}
+            id={"projects"}
         >
             <Suspense
                 fallback={<Spinner
@@ -27,12 +27,12 @@ const ClassroomModel = () => {
                     camera={{ position: [15, 4, 0], fov: 16 }}
                     viewport={{ zoom: 1.5 }}
                 >
-                        <Model path={"/models/Classroom.glb"} scale={1} />
-                        <OrbitControls autoRotate={true} />
+                    <Model path={"/models/WorkCappuccino.glb"} scale={1.5} />
+                    <OrbitControls autoRotate={true} />
                 </Canvas>
             </Suspense>
         </Container>
     )
 }
 
-export default ClassroomModel
+export default TableModel

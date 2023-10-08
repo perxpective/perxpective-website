@@ -48,7 +48,6 @@ const SkillsDIS = [
 ]
 
 const Work = () => {
-
     return (
         <Section top={"1rem"}>
             <Heading
@@ -163,6 +162,7 @@ const Work = () => {
                                 <SkillTag
                                     icon={Skill.icon}
                                     color={Skill.color}
+                                    key={index}
                                 >
                                     {Skill.name}
                                 </SkillTag>
