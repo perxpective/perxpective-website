@@ -96,10 +96,10 @@ const Work = () => {
             </Flex>
             <Box>
                 <Accordion 
-                    defaultIndex={[0]} 
-                    allowMultiple 
+                    allowMultiple
                     borderRadius={10}
                     borderBottomWidth={0}
+                    allowToggle
                 >
                     <AccordionItem
                         py={3}

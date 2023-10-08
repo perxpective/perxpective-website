@@ -6,6 +6,8 @@ const SkillTag = ({ children, color, icon }) => {
             colorScheme={color}
             size={{ sm: "sm", md: "lg" }}
             m={1}
+            style={{ transition: "all .1s ease-in-out" }}
+            _hover={{ transform: "translate(0, -2px)", boxShadow: "md" }}
         >
             <TagLeftIcon as={icon} />
             <TagLabel>{children}</TagLabel>
