@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { 
     Box, 
@@ -11,12 +11,25 @@ import {
     MenuButton,
     MenuList,
     MenuItem,
-    IconButton
+    IconButton,
+    Button
 } from '@chakra-ui/react'
+import { FcHome } from 'react-icons/fc'
 import ToggleButton from '../togglebutton'
 
 
 const NavBar = () => {
+    const [backdrop, setBackdrop] = useState(false)
+    const changeBackdrop = () => {
+        if (window.scrollY >= 120) {
+            setBackdrop(true)
+        } else {
+            setBackdrop(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeBackdrop)
+
     return (
         <Center>
             <Box
@@ -31,44 +44,60 @@ const NavBar = () => {
                     display="flex"
                     mt={8}
                     p={2}
-                    px={{base: 2, md: 8}}
+                    px={{base: 4, md: 8}}
                     maxW="fit-content"
                     align="center"
                     wrap="wrap"
                     justify="center"
                     centerContent
-                    boxShadow={'xl'}
+                    boxShadow={(backdrop ? "xl" : "none")}
                     borderRadius={'xl'}
+                    style={{ transition: "all 0.5s", backdropFilter: 'blur(10px)' }}
                     bg={useColorModeValue("white", "#242424")}
-                    css={{ backdropFilter: 'blur(10px)' }}
-                    borderWidth="1px"
+                    borderWidth={(backdrop ? "1px" : "0px")}
                     borderColor={useColorModeValue("gray.300", "gray.700")}
                 >
                     <HStack 
                         spacing="24px"
                         alignItems="center"
-                        display={{ base: 'none', md: 'flex' }}
+                        display={{ base: 'none', lg: 'flex' }}
                         width={{ base: 'full', md: 'auto' }}
                         textDecoration={'none'}
                     >
-                        <Link _hover={{color:"green.300"}}>About Me 💁</Link>
-                        <Link _hover={{color:"green.300"}}>Education 🎓</Link>
-                        <Link _hover={{color:"green.300"}}>Work 💼</Link>
-                        <Link _hover={{color:"green.300"}}>Projects 💻</Link>
-                        <Link _hover={{color:"green.300"}}>Contact 📱</Link>
-                        <Link _hover={{color:"green.300"}}>FAQ ❓</Link>
+                        <Link href={"#"}>
+                            <Button 
+                                size="sm"
+                                p={1}
+                            >
+                                <FcHome />
+                            </Button>
+                        </Link>
+                        <Link href={"#about"} _hover={{color:"green.300"}}>About Me 💁</Link>
+                        <Link href={"#education"} _hover={{color:"green.300"}}>Education 🎓</Link>
+                        <Link href={"#work"} _hover={{color:"green.300"}}>Work 💼</Link>
+                        <Link href={"#projects"} _hover={{color:"green.300"}}>Projects 💻</Link>
+                        <Link href={"#contact"} _hover={{color:"green.300"}}>Contact 📱</Link>
+                        <Link href={"#faq"} _hover={{color:"green.300"}}>FAQ ❓</Link>
                         <ToggleButton />
                     </HStack>
 
                     <Box
                         flex={1}
                         alignItems="center"
-                        display={{ base: "flex", md: "none" }}
+                        display={{ base: "flex", lg: "none" }}
                     >
+                        <Link href={"#"}>
+                            <Button
+                                size="sm"
+                                p={1}
+                            >
+                                <FcHome />
+                            </Button>
+                        </Link>
                         <Box
                             ml={0}
-                            display={{ base: "inline-block", md: "none" }}
-                            px={1}
+                            display={{ base: "inline-block", lg: "none" }}
+                            px={5}
                         >
                             <Menu isLazy id="navbar-menu">
                                 <MenuButton
@@ -76,26 +105,26 @@ const NavBar = () => {
                                     icon={<HamburgerIcon />}
                                     aria-label="Options"
                                     variant="outline"
-                                    borderColor={useColorModeValue("white", "#242424")}
+                                    size="sm"
                                 />
                                 <MenuList>
                                     <MenuItem>
-                                        <Link >About Me 💁</Link>
+                                        <Link href={"#about"}>About Me 💁</Link>
                                     </MenuItem>
                                     <MenuItem>
-                                        <Link >Education 🎓</Link>
+                                        <Link href={"#education"}>Education 🎓</Link>
                                     </MenuItem>
                                     <MenuItem>
-                                        <Link >Work 💼</Link>
+                                        <Link href={"#work"}>Work 💼</Link>
                                     </MenuItem>
                                     <MenuItem>
-                                        <Link >Projects 💻</Link>
+                                        <Link href={"#projects"}>Projects 💻</Link>
                                     </MenuItem>
                                     <MenuItem>
-                                        <Link >Contact 📱</Link>
+                                        <Link href={"#contact"}>Contact 📱</Link>
                                     </MenuItem>
                                     <MenuItem>
-                                        <Link >FAQ ❓</Link>
+                                        <Link href={"#faq"}>FAQ ❓</Link>
                                     </MenuItem>
                                 </MenuList>
                             </Menu>

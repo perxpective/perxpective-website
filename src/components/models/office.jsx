@@ -3,14 +3,16 @@ import { OrbitControls } from '@react-three/drei'
 import { Canvas, useLoader, useThree } from '@react-three/fiber'
 import React, { Suspense } from 'react'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
-import Model from './model'
+import * as THREE from 'three'
+import Model from  './model'
 
-const ClassroomModel = () => {
+const OfficeModel = () => {
     return (
         <Container
+            mt={"1rem"}
             w={{ md: '85vw' }}
-            h={{ base: '10rem', sm: '20rem', md: '25rem' }}
-            id={"education"}
+            h={{ base: '10rem', sm: '20rem', md: '24rem', lg: '30rem' }}
+            id={"work"}
         >
             <Suspense
                 fallback={<Spinner
@@ -25,15 +27,15 @@ const ClassroomModel = () => {
                 <Canvas
                     frameloop='demand'
                     shadows
-                    camera={{ position: [15, 4, 0], fov: 16 }}
-                    viewport={{ zoom: 1.5 }}
+                    camera={{ position: [10, 2, -20], fov: 16 }}
+                    viewport={{ zoom: 3 }}
                 >
-                        <Model path={"/models/Classroom.glb"} scale={1} />
-                        <OrbitControls autoRotate={true} />
+                    <Model path={"/models/Arcade.glb"} scale={0.5} />
+                    <OrbitControls autoRotate={true} />
                 </Canvas>
             </Suspense>
         </Container>
     )
 }
 
-export default ClassroomModel
+export default OfficeModel

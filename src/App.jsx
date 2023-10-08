@@ -1,13 +1,19 @@
 import { useState } from 'react'
 import './App.css'
 
+// Components
 import NavBar from './components/sections/navbar'
 import Hero from './components/sections/hero'
 import Education from './components/sections/education'
 import About from './components/sections/about'
+import Work from './components/sections/work'
 
+// Three.js Models
 import DesktopModel from './components/models/desktop'
 import ClassroomModel from './components/models/classroom'
+import OfficeModel from './components/models/office'
+
+// Chakra UI Components
 import { Container } from '@chakra-ui/react'
 
 function App() {
@@ -21,6 +27,8 @@ function App() {
 		<About />
 		<ClassroomModel />
 		<Education />
+		<OfficeModel />
+		<Work />
 	</Container>
 	)
 }

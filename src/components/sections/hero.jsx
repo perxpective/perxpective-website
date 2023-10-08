@@ -48,19 +48,19 @@ const Hero = () => {
                     Cybersecurity Student, Aspiring Software Engineer.<br />
                     I love coding and building awesome stuff!
                 </Text>
-                <Button 
-                    my={5} 
-                    rightIcon={<TriangleDownIcon />} 
-                    colorScheme="yellow"
-                    size={{ base: "xs", sm: "sm", md: "md" }}
-                    >
-                    <Link
-                        style={{ textDecoration: "none" }}
-                        href={"#about"}
-                    >
-                        Learn More About Me!
-                    </Link>
-                </Button>
+                <Link
+                    style={{ textDecoration: "none" }}
+                    href={"#about"}
+                >
+                    <Button 
+                        my={5} 
+                        rightIcon={<TriangleDownIcon />} 
+                        colorScheme="yellow"
+                        size={{ base: "xs", sm: "sm", md: "md" }}
+                        >
+                            Learn More About Me!
+                    </Button>
+                </Link>
             </Box>
         </Container>
     )
