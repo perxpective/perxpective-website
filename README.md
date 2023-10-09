@@ -4,3 +4,5 @@
 - Desk by Niko Hokkanen [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza (https://poly.pizza/m/c406LNgto0n)
 - INCUB'ARCADE V3.0 by L'INCUBATEUR Loritz'Labs [CC-BY] via Poly Pizza
 - Work Cappuccino by Don Carson [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza (https://poly.pizza/m/4UYuuqgX-xQ)
+- Phone by Alex Safayan [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza (https://poly.pizza/m/1L9oJAw6nY2)
+- Headphones by Alex Safayan [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza (https://poly.pizza/m/0chwm1mLpRC)

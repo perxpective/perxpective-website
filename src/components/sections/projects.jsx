@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from '../section'
-import { Button, Card, CardBody, CardFooter, Heading, Image, SimpleGrid, useColorModeValue, useDisclosure, Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton, Link, Tag, Badge, Text } from '@chakra-ui/react'
+import { Box, Button, Card, CardBody, CardFooter, Heading, Image, SimpleGrid, useColorModeValue, useDisclosure, Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton, Link, Tag, Badge, Text } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { ProjectList } from '../../data/index.js'
 
@@ -26,11 +26,18 @@ const FullProject = ({ isOpen, onClose, Title, FullDescription, Linked, Tags, Ye
                         <Text
                             py={4}
                         >{FullDescription}</Text>
-                        <Link py={5} href={Linked} isExternal>
-                            <Text>View Project <ExternalLinkIcon mx='2px' /></Text>
-                        </Link>
+                        <Box py={2}>
+                            <Link href={Linked} isExternal>
+                                <Text>View Project <ExternalLinkIcon mx='2px' /></Text>
+                            </Link>
+                        </Box>
                         {Tags.map((tag, index) => (
-                            <Badge colorScheme='green' key={index} mr={2} mt={3}>
+                            <Badge 
+                                colorScheme='green' 
+                                key={index}
+                                mr={2} 
+                                mt={3}
+                            >
                                 {tag}
                             </Badge>
                         ))}
@@ -61,7 +68,9 @@ const FullProject = ({ isOpen, onClose, Title, FullDescription, Linked, Tags, Ye
 const Projects = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     return (
-        <Section>
+        <Section
+            top={"1rem"}
+        >
             <Heading
                 as="h1"
                 py={3}

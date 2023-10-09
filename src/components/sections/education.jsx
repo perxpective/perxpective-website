@@ -14,45 +14,43 @@ const Education = () => {
             >
                 Where I've Studied 🎓
             </Heading>
-            <Box>
-                {Schools.map((school, index) => (
-                    <Box
-                        key={index}
+            {Schools.map((school, index) => (
+                <Box
+                    key={index}
+                >
+                    <Card
+                        direction={{ base: "column", md: "row" }}
+                        overflow={"hidden"}
+                        variant={"outline"}
+                        style={{transition: "all 0.1s ease-in-out"}}
+                        _hover={{boxShadow: "md", transform: "translate(0, -3px);"}}
+                        background={useColorModeValue("white", "#242424")}
+                        alignItems={{md:"center"}}
+                        my={4}
                     >
-                        <Card
-                            direction={{ base: "column", md: "row" }}
-                            overflow={"hidden"}
-                            variant={"outline"}
-                            style={{transition: "all 0.1s ease-in-out"}}
-                            _hover={{boxShadow: "md", transform: "translate(0, -3px);"}}
-                            background={useColorModeValue("white", "#242424")}
-                            alignItems={{md:"center"}}
-                            my={4}
-                        >
-                            <Image 
-                                src={school.logo}
-                                pl={5} 
-                                boxSize='90px'
-                                objectFit='contain'
-                            />
+                        <Image 
+                            src={school.logo}
+                            pl={5} 
+                            boxSize='90px'
+                            objectFit='contain'
+                        />
 
-                            <Stack>
-                                <CardBody pt={{base: 0, md: 5}}>
-                                    <Heading size={{base: "sm", md: "md"}}>{school.name}</Heading>
-                                    <Paragraph>{school.course}</Paragraph>
-                                    <Text
-                                        as="p"
-                                        fontSize={{ base: "12px", md: "17px" }}
-                                        color={useColorModeValue("gray.500", "gray.200")}
-                                    >
-                                        {school.year}
-                                    </Text>
-                                </CardBody>
-                            </Stack>
-                        </Card>
-                    </Box>
-                ))}
-            </Box>
+                        <Stack>
+                            <CardBody pt={{base: 0, md: 5}}>
+                                <Heading size={{base: "sm", md: "md"}}>{school.name}</Heading>
+                                <Paragraph>{school.course}</Paragraph>
+                                <Text
+                                    as="p"
+                                    fontSize={{ base: "12px", md: "17px" }}
+                                    color={useColorModeValue("gray.500", "gray.200")}
+                                >
+                                    {school.year}
+                                </Text>
+                            </CardBody>
+                        </Stack>
+                    </Card>
+                </Box>
+            ))}
         </Section>
     )
 }

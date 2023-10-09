@@ -78,6 +78,7 @@ const NavBar = () => {
                         <Link href={"#projects"} _hover={{color:"green.300"}}>Projects 💻</Link>
                         <Link href={"#contact"} _hover={{color:"green.300"}}>Contact 📱</Link>
                         <Link href={"#faq"} _hover={{color:"green.300"}}>FAQ ❓</Link>
+                        <Link href={"#faq"} _hover={{color:"green.300"}}>Blog ✍</Link>
                         <ToggleButton />
                     </HStack>
 
@@ -125,6 +126,9 @@ const NavBar = () => {
                                     </MenuItem>
                                     <MenuItem>
                                         <Link href={"#faq"}>FAQ ❓</Link>
+                                    </MenuItem>
+                                    <MenuItem>
+                                        <Link href={"#faq"}>Blog ✍</Link>
                                     </MenuItem>
                                 </MenuList>
                             </Menu>

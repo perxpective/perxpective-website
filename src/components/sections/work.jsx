@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from '../section'
-import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Badge, Box, Flex, HStack, Heading, Image, List, ListItem, Tag, TagLabel, TagLeftIcon, Text, UnorderedList, useColorModeValue } from '@chakra-ui/react'
+import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Badge, Box, Flex, Heading, Image, ListItem, Text, UnorderedList, useColorModeValue } from '@chakra-ui/react'
 import Paragraph from '../text/paragraph'
 import SkillTag from '../text/skillstag'
 
@@ -95,81 +95,84 @@ const Work = () => {
                 </Box>
             </Flex>
             <Box>
-                <Accordion 
-                    allowMultiple
-                    borderRadius={10}
-                    borderBottomWidth={0}
-                    allowToggle
+                <Box
+                    maxWidth={{ base: "inherit", md: "100%" }}
                 >
-                    <AccordionItem
-                        py={3}
+                    <Accordion 
+                        allowMultiple
+                        borderBottomWidth={0}
+                        allowToggle
                     >
-                        <AccordionButton
-                            borderRadius={10}
+                        <AccordionItem
+                            py={3}
                         >
-                            <Box
-                                as='span'
-                                textAlign={"left"}
-                                align={"center"}
-                                flex={"1"}
+                            <AccordionButton
+                                borderRadius={10}
                             >
-                                <Paragraph>
-                                    <b>Overview 📌</b>
-                                </Paragraph>
-                            </Box>
-                            <AccordionIcon />
-                        </AccordionButton>
-                        <AccordionPanel>
-                            <UnorderedList>
-                                <ListItem>
-                                    <Paragraph py={2}>
-                                        Learned Infrastructure-as-Code (IaC) as part of a pilot project to automate the provisioning of cyber range infrastructures for cyber exercises within a short period of time and little manpower. 
-                                    </Paragraph>
-                                </ListItem>
-                                <ListItem>
-                                    <Paragraph py={2}>
-                                        The project was successfully piloted at the Critical Defence Exercise (CIDeX) 2023.
-                                    </Paragraph>
-                                </ListItem>
-                                <ListItem>
-                                    <Paragraph py={2}>
-                                        Notable achievements include successfully deploying several team networks of the CIDeX 2023 network in mere hours and the development of automation scripts to import and export Windows Group Policy Objects (GPOs) into Windows exercise clients.
-                                    </Paragraph>
-                                </ListItem>
-                            </UnorderedList>
-                        </AccordionPanel>
-                    </AccordionItem>
-                    <AccordionItem
-                        py={3}
-                    >
-                        <AccordionButton
-                            borderRadius={10}
-                        >
-                            <Box
-                                as='span'
-                                textAlign={"left"}
-                                align={"center"}
-                                flex={"1"}
-                            >
-                                <Paragraph>
-                                    <b>Skills Acquired 🔧</b>
-                                </Paragraph>
-                            </Box>
-                            <AccordionIcon />
-                        </AccordionButton>
-                        <AccordionPanel>
-                            {SkillsDIS.map((Skill, index) => (
-                                <SkillTag
-                                    icon={Skill.icon}
-                                    color={Skill.color}
-                                    key={index}
+                                <Box
+                                    as='span'
+                                    textAlign={"left"}
+                                    align={"center"}
+                                    flex={"1"}
                                 >
-                                    {Skill.name}
-                                </SkillTag>
-                            ))}
-                        </AccordionPanel>
-                    </AccordionItem>
-                </Accordion>
+                                    <Paragraph>
+                                        <b>Overview 📌</b>
+                                    </Paragraph>
+                                </Box>
+                                <AccordionIcon />
+                            </AccordionButton>
+                            <AccordionPanel>
+                                <UnorderedList>
+                                    <ListItem>
+                                        <Paragraph py={2}>
+                                            Learned Infrastructure-as-Code (IaC) as part of a pilot project to automate the provisioning of cyber range infrastructures for cyber exercises within a short period of time and little manpower. 
+                                        </Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph py={2}>
+                                            The project was successfully piloted at the Critical Defence Exercise (CIDeX) 2023.
+                                        </Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph py={2}>
+                                            Notable achievements include successfully deploying several team networks of the CIDeX 2023 network in mere hours and the development of automation scripts to import and export Windows Group Policy Objects (GPOs) into Windows exercise clients.
+                                        </Paragraph>
+                                    </ListItem>
+                                </UnorderedList>
+                            </AccordionPanel>
+                        </AccordionItem>
+                        <AccordionItem
+                            py={3}
+                        >
+                            <AccordionButton
+                                borderRadius={10}
+                            >
+                                <Box
+                                    as='span'
+                                    textAlign={"left"}
+                                    align={"center"}
+                                    flex={"1"}
+                                >
+                                    <Paragraph>
+                                        <b>Skills Acquired 🔧</b>
+                                    </Paragraph>
+                                </Box>
+                                <AccordionIcon />
+                            </AccordionButton>
+                            <AccordionPanel>
+                                {SkillsDIS.map((Skill, index) => (
+                                    <SkillTag
+                                        icon={Skill.icon}
+                                        color={Skill.color}
+                                        key={index}
+                                    >
+                                        {Skill.name}
+                                    </SkillTag>
+                                ))}
+                            </AccordionPanel>
+                        </AccordionItem>
+                    </Accordion>
+                </Box>
             </Box>
         </Section>
     )

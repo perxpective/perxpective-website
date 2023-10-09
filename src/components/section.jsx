@@ -4,15 +4,15 @@ import React from 'react'
 const Section = ({children, top}) => {
     return (
         <Container
-            pt={{ base: "1rem", md: top }}
-            px={{ base: "1rem", sm: "6rem", lg: "0" }}
-            pb={{ base: "1rem", sm: "2rem", md: "3rem" }}
+            pt={{ base: "3rem", md: top }}
+            px={{ base: "1rem", sm: "4rem", lg: "0" }}
+            pb={{ base: "1rem", sm: "2rem", md: "5rem" }}
             id='about'
             align="center"
             alignItems={"center"}
         >
             <Box
-                maxW={{ base: "fit-content", md: "100%" }}
+                maxW={"100%"}
                 align="left"
             >
                 {children}
