@@ -9,7 +9,7 @@ const HeadphonesModel = () => {
         <Container
             w={{ md: '85vw' }}
             h={{ base: '10rem', sm: '20rem' }}
-            id={"projects"}
+            id={"faq"}
         >
             <Suspense
                 fallback={<Spinner
