@@ -4,69 +4,72 @@ import { Box, Button, Card, CardBody, CardFooter, Heading, Image, SimpleGrid, us
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { ProjectList } from '../../data/index.js'
 
-const FullProject = ({ isOpen, onClose, Title, FullDescription, Linked, Tags, Year, Snapshots }) => {
+const FullProject = ({ isOpen, onClose, ProjectId }) => {
+    const Project = ProjectList[ProjectId]
     return (
-        <>
-            <Modal 
-                isOpen={isOpen} 
-                onClose={onClose}
-                size={{ base: "sm", md: "lg", lg: "xl" }}
-                isCentered
-                motionPreset="slideInBottom"
-                scrollBehavior="inside"
+        <Modal 
+            isOpen={isOpen} 
+            onClose={onClose}
+            size={{ base: "sm", md: "lg", lg: "xl" }}
+            isCentered
+            motionPreset="slideInBottom"
+            scrollBehavior="inside"
+        >
+            <ModalOverlay />
+            <ModalContent
+                background={useColorModeValue("white", "#242424")}
             >
-                <ModalOverlay />
-                <ModalContent
-                    background={useColorModeValue("white", "#242424")}
-                >
-                    <ModalHeader>{Title}</ModalHeader>
-                    <ModalCloseButton />
-                    <ModalBody>
-                        <Text>Year: <b>{Year}</b></Text>
-                        <Text
-                            py={4}
-                        >{FullDescription}</Text>
-                        <Box py={2}>
-                            <Link href={Linked} isExternal>
-                                <Text>View Project <ExternalLinkIcon mx='2px' /></Text>
-                            </Link>
-                        </Box>
-                        {Tags.map((tag, index) => (
-                            <Badge 
-                                colorScheme='green' 
-                                key={index}
-                                mr={2} 
-                                mt={3}
-                            >
-                                {tag}
-                            </Badge>
-                        ))}
-                        {Snapshots.map((snapshot, index) => (
-                            <Image 
-                                src={snapshot} 
-                                key={index} 
-                                mt={5}
-                                borderRadius="lg"
-                                mb={5}
-                            />
-                        ))}
-                    </ModalBody>
-                    <ModalFooter>
-                        <Button
-                            colorScheme="yellow"
-                            onClick={onClose}
+                <ModalHeader>{Project.name}</ModalHeader>
+                <ModalCloseButton />
+                <ModalBody>
+                    <Text>Year: <b>{Project.year}</b></Text>
+                    <Text
+                        py={4}
+                    >{Project.fullDescription}</Text>
+                    <Box py={2}>
+                        <Link href={Project.link} isExternal>
+                            <Text>View Project <ExternalLinkIcon mx='2px' /></Text>
+                        </Link>
+                    </Box>
+                    {Project.tags.map((tag, index) => (
+                        <Badge 
+                            colorScheme='green' 
+                            key={index}
+                            mr={2} 
+                            mt={3}
                         >
-                            Done!
-                        </Button>
-                    </ModalFooter>
-                </ModalContent>
-            </Modal>
-        </>
+                            {tag}
+                        </Badge>
+                    ))}
+                    {Project.snapshots.map((snapshot, index) => (
+                        <Image 
+                            src={snapshot} 
+                            key={index} 
+                            mt={5}
+                            borderRadius="lg"
+                            mb={5}
+                        />
+                    ))}
+                </ModalBody>
+                <ModalFooter>
+                    <Button
+                        colorScheme="yellow"
+                        onClick={onClose}
+                    >
+                        Done!
+                    </Button>
+                </ModalFooter>
+            </ModalContent>
+        </Modal>
     )
 }
 
 const Projects = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
+    const storeProjectId = (id) => {
+        localStorage.setItem("ProjectId", id)
+    }
+
     return (
         <Section
             top={"1rem"}
@@ -96,7 +99,9 @@ const Projects = () => {
                     >
                         <CardBody pb={1}>
                             <Image 
-                                src={project.image} 
+                                src={project.image}
+                                h={"140px"}
+                                objectFit="cover"
                                 borderRadius="lg" 
                                 mb={5}
                             />
@@ -108,23 +113,24 @@ const Projects = () => {
                         <CardFooter>
                             <Button
                                 colorScheme="yellow"
-                                onClick={onOpen}
+                                onClick={
+                                    () => {
+                                        onOpen()
+                                        storeProjectId(index)
+                                    }
+                                }
                             >
                                 Learn More
                             </Button>
-                            <FullProject
-                                isOpen={isOpen}
-                                onClose={onClose}
-                                Title={project.name}
-                                FullDescription={project.fullDescription}
-                                Linked={project.link}
-                                Tags={project.tags}
-                                Year={project.year}
-                                Snapshots={project.snapshots}
-                            />
                         </CardFooter>
                     </Card>
                 ))}
+
+                <FullProject
+                    isOpen={isOpen}
+                    onClose={onClose}
+                    ProjectId={localStorage.getItem("ProjectId")}
+                />
             </SimpleGrid>
         </Section>
     )
