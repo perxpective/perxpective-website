@@ -6,7 +6,6 @@ import { QnA } from '../../data'
 
 const AccordionItems = () => (
     <Accordion
-        allowMultiple
         allowToggle
     >
         {QnA.map((item, index) => (

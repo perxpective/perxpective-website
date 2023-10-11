@@ -151,9 +151,9 @@ const About = () => {
                 mb={{base: 5, md: 10}}
                 size="2xl"
                 name="Ervin Lee" 
-                src=""
+                src="/images/avatar.jpg"
                 css={{transition: "all 0.1s ease-in-out"}}
-                _hover={{boxShadow: "md", transform: "translate(3px, -3px)"}}
+                _hover={{boxShadow: "md", transform: "translate(0, -3px)"}}
             />
             <FadeIn>
                 <Heading

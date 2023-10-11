@@ -18,7 +18,7 @@ export const ProjectList = [
         name: "Gryphons Website",
         shortDescription: "Revamped Gryphons' SIG website with React and Tailwind CSS.",
         fullDescription: "I was requested by the Gryphons' SIG to revamp their outdated website. During the development of the website, I taught myself React and Tailwind CSS from scratch. I used Vite as the bundler for the website and nicely animated it with Framer Motion. Hosted with Vercel, you may visit the website by clicking the link below.",
-        image: "/images/gryphons-website.png",
+        image: "/images/projects/gryphons-website.png",
         link: "https://gryphons.sg",
         year: "2023",
         tags: [
@@ -29,7 +29,27 @@ export const ProjectList = [
             "Framer Motion"
         ],
         snapshots: [
-            "/images/gryphons-website.png",
+            "/images/projects/gryphons-website-1.png",
+            "/images/projects/gryphons-website-2.png",
+            "/images/projects/gryphons-website-3.png",
+            "/images/projects/gryphons-website-4.png",
+        ]
+    },
+    {
+        name: "Discord Wikipedia Bot",
+        shortDescription: "A Discord bot that fetches Wikipedia articles.",
+        fullDescription: "A Discord bot that fetches Wikipedia articles. This bot was created using the Discord.py module and coded with Python. Using a Wikipedia API, the bot fetches the article and sends it to the Discord channel. The bot also has a command that allows users to search for articles based on the term the user provides to the bot.",
+        image: "/",
+        link: "https://github.com/perxpective/Discord-Wikipedia-Bot",
+        year: "2021",
+        tags: [
+            "Python",
+            "Discord.py"
+        ],
+        snapshots: [
+            "/images/projects/discord-wiki-1.png",
+            "/images/projects/discord-wiki-2.png",
+            "/images/projects/discord-wiki-3.png",
         ]
     }
 ]
@@ -41,11 +61,11 @@ export const QnA = [
     },
     {
         question: "What got you into coding? 🤔",
-        answer: "My passion for coding started all the way in secondary school 🏫 when I signed up for a coding workshop during the holidays to pass the time. I was taught basic Python 🐍 and I was hooked! I was facinated by how a few lines of code can create a program that can do so much. It has led me to take up Computing as an O-Level subject and eventually pursue a cybersecurity diploma in polytechnic! 📑"
+        answer: "My passion for coding started all the way in secondary school 🏫 when I signed up for a coding workshop during the holidays to pass the time. I was taught basic Python 🐍 and I was hooked! I was fascinated by the idea of creating programs to solve problems. It has led me to study Computing as an O-Level subject and eventually pursue a cybersecurity diploma in polytechnic! 📑"
     },
-    {
+    { 
         question: "What programming languages do you know? 💻",  
-        answer: "Python 🐍 is my first programming language I learned since secondary school. My second best language 🥈 would be JavaScript, which I learned in polytechnic. Learned HTML/CSS, MySQL, Java, C, Assembly, and C# in my cybersecurity diploma 🧑‍💻️. I'm actively teaching myself new frameworks 🆙 (e.g. React) to keep myself and my skills relevant and up-to-date! 😁" 
+        answer: "Python 🐍 is my first programming language I learned since secondary school. My second best language 🥈 would be JavaScript, which I learned in polytechnic. Learned HTML/CSS, MySQL, Java, C, Assembly, and C# in my cybersecurity diploma 🧑‍💻️. I'm actively teaching myself new frameworks 🔝 (e.g. React) to keep myself and my skills relevant and up-to-date! 😁" 
     },
     {
         question: "What's your motto? 📜",
@@ -61,15 +81,15 @@ export const QnA = [
     },
     {
         question: "Favourite movie genres? 🍿",
-        answer: "I'm a huge fan of the Marvel Cinematic Universe (MCU) and I've watched all the movies in the series 🦸‍♂️! I also enjoy comedies 😂 and sci-fi films 🛸."
+        answer: "I'm a huge fan of the Marvel Cinematic Universe (MCU) and I've watched all the films in the series 🦸‍♂️! I also enjoy comedies 😂 and sci-fi films 🛸."
     },
     {
         question: "Important question. Dogs or cats? 🐶🐱",
         answer: "I'm sorry... I'm a dog person 🐶. But cats are cute too 🐱! (I'm also in love with otters recently... 🦦)"
     },
-    {
+    { 
         question: "How did you create this website? 🤔",
-        answer: "React ⚛️, Vite ⚡️, Chakra UI 💙, and Framer Motion 🎞️! I also used Vercel to host this website 🌐. All self-taught BTW!"
+        answer: "React ⚛️, Vite ⚡️, Chakra UI 💚, and Framer Motion 🎞️! I also used Vercel to host this website 🌐. All self-taught BTW!"
     },
     {
         question: "I'm curious. How'd you get your username? 🤯",
