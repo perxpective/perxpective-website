@@ -99,7 +99,6 @@ const Work = () => {
                     maxWidth={{ base: "inherit", md: "100%" }}
                 >
                     <Accordion 
-                        allowMultiple
                         borderBottomWidth={0}
                         allowToggle
                     >
