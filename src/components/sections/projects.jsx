@@ -106,7 +106,7 @@ const Projects = () => {
                                 mb={5}
                             />
                             <Heading size="md">
-                                {project.name}
+                                {project.projectName}
                             </Heading>
                             <Text>{project.shortDescription}</Text>
                         </CardBody>

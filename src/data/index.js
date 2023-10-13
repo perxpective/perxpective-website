@@ -15,7 +15,7 @@ export const Schools = [
 
 export const ProjectList = [
     {
-        name: "Gryphons Website",
+        projectName: "Gryphons Website",
         shortDescription: "Revamped Gryphons' SIG website with React and Tailwind CSS.",
         fullDescription: "I was requested by the Gryphons' SIG to revamp their outdated website. During the development of the website, I taught myself React and Tailwind CSS from scratch. I used Vite as the bundler for the website and nicely animated it with Framer Motion. Hosted with Vercel, you may visit the website by clicking the link below.",
         image: "/images/projects/gryphons-website-1.png",
@@ -36,7 +36,7 @@ export const ProjectList = [
         ]
     },
     {
-        name: "Discord Wikipedia Bot",
+        projectName: "Discord Wikipedia Bot",
         shortDescription: "A Discord bot that fetches Wikipedia articles.",
         fullDescription: "A Discord bot that fetches Wikipedia articles. This bot was created using the Discord.py module and coded with Python. Using a Wikipedia API, the bot fetches the article and sends it to the Discord channel. The bot also has a command that allows users to search for articles based on the term the user provides to the bot.",
         image: "/images/projects/discord-wiki-1.png",
