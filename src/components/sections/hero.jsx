@@ -71,7 +71,7 @@ const Hero = () => {
                     </Link>
                     <Link
                         style={{ textDecoration: "none" }}
-                        href={"/ervin-resume.pdf"}
+                        href={"/files/ervin-resume.pdf"}
                         target='_blank'
                     >
                         <Button

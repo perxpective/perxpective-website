@@ -77,7 +77,7 @@ const Contacts = () => {
                         Currently looking for exciting internship opportunities! If you're interested in hiring me, you can download my resume and contact me!
                     </Paragraph>
                     <Link
-                        href="/ervin-resume.pdf"
+                        href="/files/ervin-resume.pdf"
                         target='_blank'
                     >
                         <Button
