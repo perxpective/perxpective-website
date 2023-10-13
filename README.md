@@ -1,4 +1,6 @@
-<img src="/public/images/screenshot.png" width="300px" />
+<p align="center">
+    <img src="/public/images/screenshot.png" width="500px" />
+</p>
 
 # Welcome to perxpective's Portfolio Website!
 This website is a showcase of my work and a way to get in touch with me.
