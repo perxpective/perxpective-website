@@ -107,6 +107,7 @@ const Contacts = () => {
                                 colorScheme={social.color}
                                 size={{ sm: "md", md: "lg" }}
                                 m={1}
+                                p={2}
                                 style={{ transition: "all .1s ease-in-out" }}
                                 _hover={{ transform: "translate(0, -2px)", boxShadow: "md" }}
                             >

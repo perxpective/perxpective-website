@@ -4,8 +4,13 @@ import { Box, Button, Card, CardBody, CardFooter, Heading, Image, SimpleGrid, us
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { ProjectList } from '../../data/index.js'
 
+localStorage.setItem("ProjectId", 0)
+
 const FullProject = ({ isOpen, onClose, ProjectId }) => {
     const Project = ProjectList[ProjectId]
+    console.log(ProjectList)
+    console.log(ProjectId)
+    console.log(ProjectList[ProjectId]);
     return (
         <Modal 
             isOpen={isOpen} 
@@ -19,7 +24,7 @@ const FullProject = ({ isOpen, onClose, ProjectId }) => {
             <ModalContent
                 background={useColorModeValue("white", "#242424")}
             >
-                <ModalHeader>{Project.name}</ModalHeader>
+                <ModalHeader>{Project.projectName}</ModalHeader>
                 <ModalCloseButton />
                 <ModalBody>
                     <Text>Year: <b>{Project.year}</b></Text>
