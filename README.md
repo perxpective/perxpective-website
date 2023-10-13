@@ -1,3 +1,15 @@
+![Screenshot](/public/images/screenshot.png)
+# Welcome to perxpective's Portfolio Website!
+This website is a showcase of my work and a way to get in touch with me.
+
+Stack:
+- [Three.js](https://threejs.org/)
+- [React](https://reactjs.org/)
+- [React-Three-Fiber](https://github.com/pmndrs/react-three-fiber)
+- [Vite](https://vitejs.dev/)
+- [Chakra UI](https://chakra-ui.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+
 # Three.js Model Credits (Poly.pizza)
 - Desk by Robbobin [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza (https://poly.pizza/m/58zA8yry4qr)
 - Classroom by Yanting Cao [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza (https://poly.pizza/m/5-Zbza_HL3X)
