@@ -42,17 +42,17 @@ const NavBar = () => {
             >
                 <Container
                     display="flex"
-                    mt={{base: "4px", md: "12px"}}
+                    mt={{base: "0px", md: "12px"}}
                     p={2}
                     px={{base: 4, md: 8}}
-                    maxW="fit-content"
+                    maxW={"fit-content" }
                     align="center"
                     wrap="wrap"
                     justify="center"
                     centerContent
                     boxShadow={(backdrop ? "xl" : "none")}
                     borderRadius={'xl'}
-                    style={{ transition: "all 0.5s", backdropFilter: 'blur(10px)' }}
+                    style={{ transition: "all 0.5s" }}
                     bg={useColorModeValue("white", "#242424")}
                     borderWidth={(backdrop ? "1px" : "0px")}
                     borderColor={useColorModeValue("gray.300", "gray.700")}

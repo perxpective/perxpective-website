@@ -7,7 +7,7 @@ import Model from './model'
 const DesktopModel = () => {
 	return (
 		<Container
-			mt={"5rem"}
+			mt={{sm: "9rem", md:"5rem"}}
 			w={{md:'85vw'}}
 			h={{base: '10rem', sm: '20rem', md: '25rem', lg: '30rem'}}
 		>
