@@ -11,6 +11,7 @@ const AccordionItems = () => (
         {QnA.map((item, index) => (
                 <AccordionItem
                     py={3}
+                    key={index}
                 >
                     <AccordionButton
                         borderRadius={10}
