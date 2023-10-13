@@ -42,7 +42,7 @@ const NavBar = () => {
             >
                 <Container
                     display="flex"
-                    mt={"12px"}
+                    mt={{base: "4px", md: "12px"}}
                     p={2}
                     px={{base: 4, md: 8}}
                     maxW="fit-content"
