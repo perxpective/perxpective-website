@@ -128,7 +128,7 @@ const NavBar = () => {
                                         <Link href={"#faq"}>FAQ ❓</Link>
                                     </MenuItem>
                                     <MenuItem>
-                                        <Link href={"#faq"}>Blog ✍</Link>
+                                        <Link href={"https://blog.perxpective.vercel.app"}>Blog ✍</Link>
                                     </MenuItem>
                                 </MenuList>
                             </Menu>
