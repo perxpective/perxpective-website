@@ -8,9 +8,6 @@ localStorage.setItem("ProjectId", 0)
 
 const FullProject = ({ isOpen, onClose, ProjectId }) => {
     const Project = ProjectList[ProjectId]
-    console.log(ProjectList)
-    console.log(ProjectId)
-    console.log(ProjectList[ProjectId]);
     return (
         <Modal 
             isOpen={isOpen} 

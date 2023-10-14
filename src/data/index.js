@@ -36,6 +36,23 @@ export const ProjectList = [
         ]
     },
     {
+        projectName: "perxpective's Blog",
+        shortDescription: "My personal blog created with Astro and Tailwind CSS.",
+        fullDescription: "Inspired by one of my favourite developers devaslife, I decided to create my very own blog that I could post my own articles on. I used Astro as the main framework for the website and styled it with Tailwind CSS. I use Obsidian as my CMS to write my articles with Markdown and ultilised its community plugins such as Obsidian Git to publish new posts to my blog!",
+        image: "/images/projects/perxpective-blog-1.jpg",
+        link: "https://blog.perxpective.vercel.app",
+        year: "2023",
+        tags: [
+            "Astro",
+            "JavaScript",
+            "Tailwind CSS",
+            "Obsidian",
+        ],
+        snapshots: [
+            "/images/projects/perxpective-blog-1.jpg",
+        ]
+    },
+    {
         projectName: "Discord Wikipedia Bot",
         shortDescription: "A Discord bot that fetches Wikipedia articles.",
         fullDescription: "A Discord bot that fetches Wikipedia articles. This bot was created using the Discord.py module and coded with Python. Using a Wikipedia API, the bot fetches the article and sends it to the Discord channel. The bot also has a command that allows users to search for articles based on the term the user provides to the bot.",
@@ -51,7 +68,7 @@ export const ProjectList = [
             "/images/projects/discord-wiki-2.png",
             "/images/projects/discord-wiki-3.png",
         ]
-    }
+    },
 ]
 
 export const QnA = [
