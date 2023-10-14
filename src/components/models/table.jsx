@@ -8,7 +8,7 @@ export const TableModel = () => {
     return (
         <Container
             w={{ md: '85vw' }}
-            h={{ base: '10rem', sm: '20rem', md: '23rem' }}
+            h={{ base: '10rem', sm: '30rem', md: '23rem' }}
             id={"projects"}
         >
             <Suspense
