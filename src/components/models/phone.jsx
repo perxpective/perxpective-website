@@ -9,7 +9,7 @@ const PhoneModel = () => {
         <Container
             mt={"5rem"}
             w={{ md: '85vw' }}
-            h={{ base: '10rem', sm: '25rem', md: '20rem' }}
+            h={{ base: '15rem', sm: '25rem', md: '20rem' }}
             id={"contact"}
         >
             <Suspense

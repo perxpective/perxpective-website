@@ -9,7 +9,7 @@ const OfficeModel = () => {
         <Container
             mt={"1rem"}
             w={{ md: '85vw' }}
-            h={{ base: '10rem', sm: '30rem', md: '24rem', lg: '30rem' }}
+            h={{ base: '15rem', sm: '30rem', md: '24rem', lg: '30rem' }}
             id={"work"}
         >
             <Suspense
