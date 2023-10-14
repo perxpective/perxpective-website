@@ -17,7 +17,7 @@ const Model = ({path, scale}) => {
             <primitive
                 object={gltf.scene}
                 scale={scale}
-                position={[0, 0, 0]}
+                position={[0.3, -0.5, 0.5]}
             />
         </mesh>
     )

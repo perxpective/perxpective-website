@@ -38,10 +38,10 @@ const Education = () => {
                         <Stack>
                             <CardBody pt={{base: 0, md: 5}}>
                                 <Heading size={{base: "sm", md: "md"}}>{school.name}</Heading>
-                                <Paragraph>{school.course}</Paragraph>
+                                <Text as="p" fontSize={{ base: "13px", md: "17px" }}>{school.course}</Text>
                                 <Text
                                     as="p"
-                                    fontSize={{ base: "12px", md: "17px" }}
+                                    fontSize={{ base: "13px", md: "17px" }}
                                     color={useColorModeValue("gray.500", "gray.200")}
                                 >
                                     {school.year}

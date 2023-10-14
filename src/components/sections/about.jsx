@@ -166,7 +166,7 @@ const MySkills = [
 
 const About = () => {
     return (
-        <Section top={"15rem"}>
+        <Section top={"15rem"} id={"about"}>
             <Avatar
                 mb={{ base: 5, md: 10 }}
                 size="2xl"
@@ -174,6 +174,7 @@ const About = () => {
                 src="/images/avatar.jpg"
                 css={{ transition: "all 0.1s ease-in-out" }}
                 _hover={{ boxShadow: "md", transform: "translate(0, -3px)" }}
+                id="about"
             />
             <FadeIn>
                 <Heading

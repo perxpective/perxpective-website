@@ -113,7 +113,12 @@ const Projects = () => {
                             <Heading size="md">
                                 {project.projectName}
                             </Heading>
-                            <Text>{project.shortDescription}</Text>
+                            <Text
+                                as="p"
+                                fontSize={{ base: "14px", md: "17px" }}
+                            >
+                                {project.shortDescription}
+                            </Text>
                         </CardBody>
                         <CardFooter>
                             <Button

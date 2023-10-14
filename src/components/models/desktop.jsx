@@ -7,9 +7,9 @@ import Model from './model'
 const DesktopModel = () => {
 	return (
 		<Container
-			mt={{sm: "9rem", md:"5rem"}}
+			mt={{base: "0rem", sm: "3rem", md: "3rem"}}
 			w={{md:'85vw'}}
-			h={{base: '10rem', sm: '20rem', md: '25rem', lg: '30rem'}}
+			h={{base: '12rem', sm: '20rem', md: '25rem', lg: '25rem'}}
 		>
 			<Suspense 
 				fallback={<Spinner

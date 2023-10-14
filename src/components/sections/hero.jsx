@@ -48,7 +48,7 @@ const Hero = () => {
                 </Text>
                 <Text
                     as="p"
-                    fontSize={{ base: "12px", sm: "12px", md: "17px" }}    
+                    fontSize={{ base: "14px", sm: "14px", md: "17px" }}    
                     color={useColorModeValue("gray.500", "gray.200")}
                     py={1}
                 >
@@ -62,9 +62,9 @@ const Hero = () => {
                         <Button
                             mb={2}
                             mr={2}
-                            rightIcon={<TriangleDownIcon />} 
-                            colorScheme="yellow"
-                            size={{ base: "xs", sm: "sm", md: "md" }}
+                            rightIcon={<TriangleDownIcon />}
+                            colorScheme="blue"
+                            size={{ base: "sm", sm: "sm", md: "md" }}
                             >
                                 Learn More About Me!
                         </Button>
@@ -78,7 +78,7 @@ const Hero = () => {
                             mb={2}
                             mr={3}
                             colorScheme="green"
-                            size={{ base: "xs", sm: "sm", md: "md" }}
+                            size={{ base: "sm", sm: "sm", md: "md" }}
                             >
                                 Download My Resume! 📑
                         </Button>
@@ -93,7 +93,7 @@ const Hero = () => {
                             mr={3}
                             colorScheme="gray"
                             leftIcon={<SiGithub />}
-                            size={{ base: "xs", sm: "sm", md: "md" }}
+                            size={{ base: "sm", sm: "sm", md: "md" }}
                             >
                                 View Source Code
                         </Button>

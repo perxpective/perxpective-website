@@ -64,7 +64,7 @@ const Work = () => {
             >
                 <Image 
                     src="/images/dis.jpeg"
-                    boxSize={"100px"}
+                    boxSize={{base: "65px", md: "100px"}}
                     objectFit='contain'
                     borderRadius={7}
                 />

@@ -26,7 +26,7 @@ import Footer from './components/footer'
 function App() {
 	return (
 	<Container
-		maxW={"container.sm"}
+		maxW={"container.lg"}
 	>	
 		<NavBar />
 
