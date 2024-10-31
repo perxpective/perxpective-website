@@ -1,5 +1,11 @@
 export const Schools = [
     {
+        name: "Nanyang Technological University",
+        course: "BEng in Information Engineering and Media",
+        year: "2026 - 2030",
+        logo: "/images/ntu.png"
+    },
+    {
         name: "Singapore Polytechnic",
         course: "Diploma in Cybersecurity and Digital Forensics",
         year: "2021 - 2024",
@@ -10,7 +16,7 @@ export const Schools = [
         course: "GCE O-Levels",
         year: "2017 - 2020",
         logo: "/images/acsbr.png"
-    }
+    },
 ]
 
 export const ProjectList = [
@@ -69,6 +75,27 @@ export const ProjectList = [
             "/images/projects/discord-wiki-3.png",
         ]
     },
+    {
+        projectName: "Occult",
+        shortDescription: "A Q&A AI System Prototype that assists security analysts uncover the stories behind their PCAP files.",
+        fullDescription: "Occult is a proof-of-concept application developed for my Final Year Project (FYP) in polytechnic. This project explores the use of Large Language Models (LLMs) to analyse data within PCAP files to streamline the resource-intensive network analysis process using an user-friendly question-answering interface similar to ChatGPT.",
+        image: "/images/projects/occult-1.jpg",
+        link: "https://github.com/perxpective/Occult",
+        year: "2023",
+        tags: [
+            "Python",
+            "Streamlit",
+            "FastAPI",
+            "ChromaDB",
+            "Google PaLM",
+            "Llama2",
+            "LangChain",
+            "HuggingFace"
+        ],
+        snapshots: [
+            "/images/projects/occult-2.png",
+        ]
+    }
 ]
 
 export const QnA = [

@@ -36,7 +36,7 @@ const Socials = [
     {
         name: "Medium",
         username: "perxpective",
-        link: "https://perxpective.medium.com/",
+        link: "https://perxpectives.medium.com/",
         icon: SiMedium,
         color: "gray"
     }

@@ -187,8 +187,8 @@ const About = () => {
                 </Heading>
 
                 <Paragraph py={4}>
-                Currently a diploma student at <b>Singapore Polytechnic</b>{" "}
-                specializing in <u>Cybersecurity and Digital Forensics</u> 🔐!
+                I am currently undergoing Basic Military Training (BMT) at the Singapore Armed Forces (SAF). I recently graduated from <b>Singapore Polytechnic</b>{" "}
+                and obtained my Diploma in <u>Cybersecurity and Digital Forensics</u> 🔐!
                 </Paragraph>
                 <Paragraph py={4}>
                 I'm an <i>organised, proactive, collaborative, hard-working</i> and{" "}
@@ -200,10 +200,11 @@ const About = () => {
                 upskill as a developer 💻.
                 </Paragraph>
                 <Paragraph py={4}>
-                Looking to pursue a career in software engineering, bridging my
+                I aspire to pursue a career as a military expert at the newly 
+                established Digital and Intelligence Service (DIS) leveraging my
                 knowledge in cybersecurity and self-taught skills in software
-                engineering to develop impactful products and solutions for public
-                good and digital defence 📱.
+                engineering to develop impactful products and solutions for the public
+                good and digital defence 📱 of Singapore.
                 </Paragraph>
             </FadeIn>
             <FadeIn>
