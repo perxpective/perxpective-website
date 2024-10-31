@@ -31,7 +31,7 @@ const Education = () => {
                         <Image 
                             src={school.logo}
                             pl={5} 
-                            boxSize='90px'
+                            boxSize='75px'
                             objectFit='contain'
                         />
 
